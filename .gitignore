@@ -10,3 +10,4 @@ data/raw/
 runs/
 .pytest_cache/
 .impeccable/live/
+.impeccable/review/

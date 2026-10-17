@@ -513,7 +513,7 @@ class Sim:
             "rate_hz": K.RATE,
             "series": self.rows,
             "camera": {"rate_hz": K.RATE / CAM_EVERY, "frames": [{"t": t, "file": f"frames/{i:04d}.jpg"} for i, (t, _) in enumerate(self.frames)],
-                       "name": "cam0 (overhead, fixed)"},
+                       "name": "cam0 (overhead, fixed)", "intrinsics": _intrinsics()},
             "tracks": self.tracks,
             "zones": s.zones,
             "events": self.events,
@@ -527,6 +527,11 @@ class Sim:
         log = RunLog(data)
         log._frames = self.frames
         return log
+
+
+def _intrinsics() -> dict:
+    from .render import CAM, FOCAL, H, LOOK, W
+    return {"pos": CAM.tolist(), "look": LOOK.tolist(), "up": [0, 0, 1], "focal_px": FOCAL, "w": W, "h": H}
 
 
 def simulate(name: str, seed: int = 0, render: bool = True) -> RunLog:

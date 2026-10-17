@@ -379,7 +379,7 @@ def rules_verdict(inv: Investigation) -> dict:
     if goal.status == KEPT:
         killed = [n for n in inv.nodes if n.status == KILLED and n.parent is None]
         for n in killed:
-            claims.append({"kind": "ruled_out", "text": f"Not {_short(n)}: {n.summary}", "cites": n.evidence[:3], "hypothesis": n.id})
+            claims.append({"kind": "ruled_out", "text": f"{n.statement} Refuted: {n.summary[0].lower()}{n.summary[1:]}", "cites": n.evidence[:3], "hypothesis": n.id})
         head = f"Run succeeded: {goal.summary[0].lower()}{goal.summary[1:]} {len(killed)} failure hypotheses were tested and none fired."
         return {"headline": head, "claims": claims}
     chain = [_node(inv, c) for c in cause["chain"]]
@@ -388,7 +388,7 @@ def rules_verdict(inv: Investigation) -> dict:
     in_chain = set(cause["chain"])
     for n in inv.nodes:
         if n.status == KILLED and n.id != "goal.met" and (n.parent is None or n.parent in in_chain):
-            claims.append({"kind": "ruled_out", "text": f"Not {_short(n)}: {n.summary}", "cites": n.evidence[:3], "hypothesis": n.id})
+            claims.append({"kind": "ruled_out", "text": f"{n.statement} Refuted: {n.summary[0].lower()}{n.summary[1:]}", "cites": n.evidence[:3], "hypothesis": n.id})
     for cid in reversed(cause["chain"]):
         if cid in FIXES:
             claims.append({"kind": "fix", "text": FIXES[cid], "cites": _node(inv, cid).evidence[:3], "hypothesis": cid})
