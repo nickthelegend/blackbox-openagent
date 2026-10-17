@@ -130,7 +130,7 @@
   .fail.narrow b { left: calc(100% + 6px); }
   .fail.narrow.flip b { left: auto; right: calc(100% + 6px); }
   .pencil { position: absolute; border: 1px dashed rgba(72, 80, 101, .55); border-radius: 2px; pointer-events: none; }
-  .lane .lbl .val { font: 500 11px/1.2 var(--mono); color: var(--ink); letter-spacing: 0; text-transform: none; margin-top: 2px; }
+  .lane .lbl .val { font: 500 11px/1.2 var(--mono); color: var(--ink); letter-spacing: 0; text-transform: none; margin-top: 2px; white-space: nowrap; }
   .lane .lbl .short { display: none; }
   .bracket { position: absolute; border: 2px solid var(--red); border-radius: 3px; pointer-events: none; animation: bracket .7s var(--ease) both; }
   .bracket b { position: absolute; right: 100%; top: 50%; transform: translate(-6px, -50%); background: var(--red); color: #fff; font: 600 11px/1 var(--mono); padding: 3px 5px; border-radius: 2px; white-space: nowrap; }
@@ -191,12 +191,10 @@
   .hyp.flash { animation: flash 1.2s var(--ease); }
   @keyframes flash { 0%, 30% { background: var(--red-wash); } 100% { background: transparent; } }
   .stamp { font: 700 12px/1 var(--cond); letter-spacing: .14em; text-transform: uppercase; padding: 5px 7px 4px; border: 2px solid currentColor; border-radius: 3px; transform: rotate(-4deg); white-space: nowrap;
-    margin-top: 1px; -webkit-mask: url(stamp-ink.svg) 0 0 / 80px 32px repeat; mask: url(stamp-ink.svg) 0 0 / 80px 32px repeat; }
-  .stamp.killed { -webkit-mask-position: 23px 9px; mask-position: 23px 9px; }
-  .stamp.inconclusive { -webkit-mask-position: 51px 17px; mask-position: 51px 17px; }
+    margin-top: 1px; -webkit-mask: url(stamp-ink.svg) var(--ix, 0) var(--iy, 0) / 80px 32px repeat; mask: url(stamp-ink.svg) var(--ix, 0) var(--iy, 0) / 80px 32px repeat; }
   .stamp.kept { color: var(--red); box-shadow: inset 0 0 0 1px currentColor; }
   .stamp.killed { color: var(--ink-2); transform: rotate(3deg); }
-  .stamp.inconclusive { color: var(--pencil); border-style: dashed; transform: rotate(-2deg); }
+  .stamp.inconclusive { color: var(--ink-3); border-color: var(--pencil); border-style: dashed; transform: rotate(-2deg); }
   .stamp.in { animation: stamp .42s var(--ease) both; }
   @keyframes stamp { 0% { opacity: 0; transform: scale(1.7) rotate(-12deg); } 60% { opacity: 1; } }
   .log { margin-top: 26px; border-top: 1px solid var(--rule-2); padding-top: 14px; }
@@ -517,6 +515,7 @@ function buildLanes() {
       }
     } else {
       L.unit = { deg: "°", "deg open": "°", A: " A", cm: " cm", "m/s²": " m/s²" }[L.sub] || "";
+    if (L.id === "accel" && matchMedia("(max-width: 760px)").matches) L.unit = "";  // the unit lives in the tooltip on phones
       let lo = Infinity, hi = -Infinity;
       for (const y of L.y) for (const v of y) { if (v < lo) lo = v; if (v > hi) hi = v; }
       if (L.cmd) for (const v of L.cmd) { if (v < lo) lo = v; if (v > hi) hi = v; }
@@ -549,6 +548,7 @@ function buildLanes() {
     lanesEl.appendChild(div);
   }
 }
+const hash = str => { let h = 2166136261; for (const c of str) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return Math.abs(h); };  // each stamp lands its own impression
 const fmtR = v => (Math.abs(v) >= 10 ? v.toFixed(0) : v.toFixed(1));
 
 function buildTicks() {
@@ -594,7 +594,7 @@ function buildTree() {
     const ctl = h.control ? `<div class="ctl">${ICON(h.control.specific ? "ctl" : "warn")}${h.control.specific ? "Silent on the nominal control run" : "Also fires on a nominal run: not specific"}</div>` : "";
     return `<li><div class="hyp ${esc(h.status)}" data-h="${esc(h.id)}">
       <div class="row"><div><div class="st">${esc(h.statement)}</div><div class="test">Test: ${esc(h.test)}</div></div>
-      <span class="stamp ${esc(h.status)}">${STAMP[h.status]}</span></div>
+      <span class="stamp ${esc(h.status)}" style="--ix:${(hash(h.id) % 61) - 30}px;--iy:${(hash(h.id + "y") % 23) - 11}px">${STAMP[h.status]}</span></div>
       <div class="res">${esc(h.summary)}<span class="chips">${h.evidence.slice(0, 6).map(chipHTML).join("")}</span></div>${ctl}
     </div>${kids.length ? `<ul>${kids.map(node).join("")}</ul>` : ""}</li>`;
   };

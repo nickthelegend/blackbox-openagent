@@ -373,10 +373,6 @@ def failure_moment(inv: Investigation) -> dict | None:
     return None
 
 
-def _short(n: Node) -> str:
-    return n.statement.rstrip(".").lower()
-
-
 def rules_verdict(inv: Investigation) -> dict:
     goal = _node(inv, "goal.met")
     cause = primary_cause(inv)

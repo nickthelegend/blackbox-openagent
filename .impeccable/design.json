@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T22:00:00Z",
+  "title": "Design System: BLACKBOX",
+  "extensions": {
+    "colorMeta": {
+      "examiner-red": {
+        "role": "primary",
+        "displayName": "Examiner Red",
+        "tonalRamp": [
+          "oklch(15% 0.160 31.3)",
+          "oklch(26% 0.160 31.3)",
+          "oklch(38% 0.160 31.3)",
+          "oklch(49% 0.160 31.3)",
+          "oklch(61% 0.160 31.3)",
+          "oklch(72% 0.160 31.3)",
+          "oklch(84% 0.160 31.3)",
+          "oklch(95% 0.160 31.3)"
+        ],
+        "cssVar": "--red"
+      },
+      "red-wash": {
+        "role": "primary",
+        "displayName": "Red Wash",
+        "tonalRamp": [
+          "oklch(15% 0.160 31.3)",
+          "oklch(26% 0.160 31.3)",
+          "oklch(38% 0.160 31.3)",
+          "oklch(49% 0.160 31.3)",
+          "oklch(61% 0.160 31.3)",
+          "oklch(72% 0.160 31.3)",
+          "oklch(84% 0.160 31.3)",
+          "oklch(95% 0.160 31.3)"
+        ],
+        "cssVar": "--red-wash"
+      },
+      "red-line": {
+        "role": "primary",
+        "displayName": "Red Line",
+        "tonalRamp": [
+          "oklch(15% 0.160 31.3)",
+          "oklch(26% 0.160 31.3)",
+          "oklch(38% 0.160 31.3)",
+          "oklch(49% 0.160 31.3)",
+          "oklch(61% 0.160 31.3)",
+          "oklch(72% 0.160 31.3)",
+          "oklch(84% 0.160 31.3)",
+          "oklch(95% 0.160 31.3)"
+        ],
+        "cssVar": "--red-line"
+      },
+      "red-on-film": {
+        "role": "primary",
+        "displayName": "Red on Film",
+        "tonalRamp": [
+          "oklch(15% 0.160 32.1)",
+          "oklch(26% 0.160 32.1)",
+          "oklch(38% 0.160 32.1)",
+          "oklch(49% 0.160 32.1)",
+          "oklch(61% 0.160 32.1)",
+          "oklch(72% 0.160 32.1)",
+          "oklch(84% 0.160 32.1)",
+          "oklch(95% 0.160 32.1)"
+        ]
+      },
+      "commanded-blue": {
+        "role": "secondary",
+        "displayName": "Commanded Blue",
+        "tonalRamp": [
+          "oklch(15% 0.121 253.8)",
+          "oklch(26% 0.121 253.8)",
+          "oklch(38% 0.121 253.8)",
+          "oklch(49% 0.121 253.8)",
+          "oklch(61% 0.121 253.8)",
+          "oklch(72% 0.121 253.8)",
+          "oklch(84% 0.121 253.8)",
+          "oklch(95% 0.121 253.8)"
+        ],
+        "cssVar": "--cmd"
+      },
+      "camera-violet": {
+        "role": "secondary",
+        "displayName": "Camera Violet",
+        "tonalRamp": [
+          "oklch(15% 0.124 297.4)",
+          "oklch(26% 0.124 297.4)",
+          "oklch(38% 0.124 297.4)",
+          "oklch(49% 0.124 297.4)",
+          "oklch(61% 0.124 297.4)",
+          "oklch(72% 0.124 297.4)",
+          "oklch(84% 0.124 297.4)",
+          "oklch(95% 0.124 297.4)"
+        ],
+        "cssVar": "--track"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Chart Paper",
+        "tonalRamp": [
+          "oklch(15% 0.016 79.4)",
+          "oklch(26% 0.016 79.4)",
+          "oklch(38% 0.016 79.4)",
+          "oklch(49% 0.016 79.4)",
+          "oklch(61% 0.016 79.4)",
+          "oklch(72% 0.016 79.4)",
+          "oklch(84% 0.016 79.4)",
+          "oklch(95% 0.016 79.4)"
+        ],
+        "cssVar": "--paper"
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Worn Paper",
+        "tonalRamp": [
+          "oklch(15% 0.021 79.1)",
+          "oklch(26% 0.021 79.1)",
+          "oklch(38% 0.021 79.1)",
+          "oklch(49% 0.021 79.1)",
+          "oklch(61% 0.021 79.1)",
+          "oklch(72% 0.021 79.1)",
+          "oklch(84% 0.021 79.1)",
+          "oklch(95% 0.021 79.1)"
+        ],
+        "cssVar": "--paper-2"
+      },
+      "paper-3": {
+        "role": "neutral",
+        "displayName": "Stage Band",
+        "tonalRamp": [
+          "oklch(15% 0.026 76.8)",
+          "oklch(26% 0.026 76.8)",
+          "oklch(38% 0.026 76.8)",
+          "oklch(49% 0.026 76.8)",
+          "oklch(61% 0.026 76.8)",
+          "oklch(72% 0.026 76.8)",
+          "oklch(84% 0.026 76.8)",
+          "oklch(95% 0.026 76.8)"
+        ],
+        "cssVar": "--paper-3"
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Clean Sheet",
+        "tonalRamp": [
+          "oklch(15% 0.009 84.6)",
+          "oklch(26% 0.009 84.6)",
+          "oklch(38% 0.009 84.6)",
+          "oklch(49% 0.009 84.6)",
+          "oklch(61% 0.009 84.6)",
+          "oklch(72% 0.009 84.6)",
+          "oklch(84% 0.009 84.6)",
+          "oklch(95% 0.009 84.6)"
+        ],
+        "cssVar": "--sheet"
+      },
+      "grid": {
+        "role": "neutral",
+        "displayName": "Grid Fine",
+        "tonalRamp": [
+          "oklch(15% 0.138 31.9)",
+          "oklch(26% 0.138 31.9)",
+          "oklch(38% 0.138 31.9)",
+          "oklch(49% 0.138 31.9)",
+          "oklch(61% 0.138 31.9)",
+          "oklch(72% 0.138 31.9)",
+          "oklch(84% 0.138 31.9)",
+          "oklch(95% 0.138 31.9)"
+        ],
+        "cssVar": "--grid"
+      },
+      "grid-major": {
+        "role": "neutral",
+        "displayName": "Grid Second",
+        "tonalRamp": [
+          "oklch(15% 0.153 31.7)",
+          "oklch(26% 0.153 31.7)",
+          "oklch(38% 0.153 31.7)",
+          "oklch(49% 0.153 31.7)",
+          "oklch(61% 0.153 31.7)",
+          "oklch(72% 0.153 31.7)",
+          "oklch(84% 0.153 31.7)",
+          "oklch(95% 0.153 31.7)"
+        ],
+        "cssVar": "--grid-major"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "tonalRamp": [
+          "oklch(15% 0.037 74.0)",
+          "oklch(26% 0.037 74.0)",
+          "oklch(38% 0.037 74.0)",
+          "oklch(49% 0.037 74.0)",
+          "oklch(61% 0.037 74.0)",
+          "oklch(72% 0.037 74.0)",
+          "oklch(84% 0.037 74.0)",
+          "oklch(95% 0.037 74.0)"
+        ],
+        "cssVar": "--rule"
+      },
+      "rule-2": {
+        "role": "neutral",
+        "displayName": "Paper Rule Dark",
+        "tonalRamp": [
+          "oklch(15% 0.046 73.7)",
+          "oklch(26% 0.046 73.7)",
+          "oklch(38% 0.046 73.7)",
+          "oklch(49% 0.046 73.7)",
+          "oklch(61% 0.046 73.7)",
+          "oklch(72% 0.046 73.7)",
+          "oklch(84% 0.046 73.7)",
+          "oklch(95% 0.046 73.7)"
+        ],
+        "cssVar": "--rule-2"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "tonalRamp": [
+          "oklch(15% 0.032 266.0)",
+          "oklch(26% 0.032 266.0)",
+          "oklch(38% 0.032 266.0)",
+          "oklch(49% 0.032 266.0)",
+          "oklch(61% 0.032 266.0)",
+          "oklch(72% 0.032 266.0)",
+          "oklch(84% 0.032 266.0)",
+          "oklch(95% 0.032 266.0)"
+        ],
+        "cssVar": "--ink"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Faded",
+        "tonalRamp": [
+          "oklch(15% 0.036 268.6)",
+          "oklch(26% 0.036 268.6)",
+          "oklch(38% 0.036 268.6)",
+          "oklch(49% 0.036 268.6)",
+          "oklch(61% 0.036 268.6)",
+          "oklch(72% 0.036 268.6)",
+          "oklch(84% 0.036 268.6)",
+          "oklch(95% 0.036 268.6)"
+        ],
+        "cssVar": "--ink-2"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Faint",
+        "tonalRamp": [
+          "oklch(15% 0.029 273.1)",
+          "oklch(26% 0.029 273.1)",
+          "oklch(38% 0.029 273.1)",
+          "oklch(49% 0.029 273.1)",
+          "oklch(61% 0.029 273.1)",
+          "oklch(72% 0.029 273.1)",
+          "oklch(84% 0.029 273.1)",
+          "oklch(95% 0.029 273.1)"
+        ],
+        "cssVar": "--ink-3"
+      },
+      "pencil": {
+        "role": "neutral",
+        "displayName": "Pencil",
+        "tonalRamp": [
+          "oklch(15% 0.019 84.6)",
+          "oklch(26% 0.019 84.6)",
+          "oklch(38% 0.019 84.6)",
+          "oklch(49% 0.019 84.6)",
+          "oklch(61% 0.019 84.6)",
+          "oklch(72% 0.019 84.6)",
+          "oklch(84% 0.019 84.6)",
+          "oklch(95% 0.019 84.6)"
+        ],
+        "cssVar": "--pencil"
+      },
+      "film-black": {
+        "role": "neutral",
+        "displayName": "Film Black",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(38% 0.000 89.9)",
+          "oklch(49% 0.000 89.9)",
+          "oklch(61% 0.000 89.9)",
+          "oklch(72% 0.000 89.9)",
+          "oklch(84% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Verdict at the top of the report; run title at the same tier."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "BLACKBOX in the top bar only."
+      },
+      "readout": {
+        "displayName": "Readout",
+        "purpose": "The run clock."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Claims and hypothesis statements."
+      },
+      "body-sm": {
+        "displayName": "Body Sm",
+        "purpose": "Run facts, tally, results, ruled-out items, button labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Test descriptions, legend, notes, proof line, tooltip."
+      },
+      "section-label": {
+        "displayName": "Section Label",
+        "purpose": "The report's own section headings; never a kicker above another heading."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Lane names, claim kinds, slip headers, reel names."
+      },
+      "stamp": {
+        "displayName": "Stamp",
+        "purpose": "HOLDS / REFUTED / OPEN stamps."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Document slips, log lines, run ids."
+      },
+      "data-sm": {
+        "displayName": "Data Sm",
+        "purpose": "Chips, live lane values, ruler figures, bracket tags."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mounted-viewfinder",
+        "value": "0 1px 0 rgba(255,255,255,.6), 0 6px 16px -8px rgba(40,30,20,.45)",
+        "purpose": "Camera viewfinder, as a print mounted on the sheet."
+      },
+      {
+        "name": "pulled-slip",
+        "value": "0 0 0 1px #c3301b, 0 6px 14px -8px rgba(40,30,20,.35)",
+        "purpose": "A document slip when it is the cited evidence."
+      },
+      {
+        "name": "tooltip",
+        "value": "0 8px 20px -8px rgba(0,0,0,.5)",
+        "purpose": "Evidence tooltip floating over the page."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "House ease for every transition and entrance (CSS --ease)."
+      },
+      {
+        "name": "press",
+        "value": "120ms",
+        "purpose": "Button press drop of 1px."
+      },
+      {
+        "name": "hover",
+        "value": "150ms",
+        "purpose": "Button and chip hover fills, tooltip fade."
+      },
+      {
+        "name": "tab",
+        "value": "200ms",
+        "purpose": "Reel tab hover, log disclosure chevron."
+      },
+      {
+        "name": "slip",
+        "value": "250ms",
+        "purpose": "Evidence slip becoming active."
+      },
+      {
+        "name": "stamp-land",
+        "value": "420ms, staggered 55ms from 120ms",
+        "purpose": "Stamps land from 1.7x scale and -12deg."
+      },
+      {
+        "name": "fail-box",
+        "value": "600ms, 250ms delay",
+        "purpose": "Failure box settles from 1.08x scale."
+      },
+      {
+        "name": "bracket",
+        "value": "700ms",
+        "purpose": "Evidence bracket and film hit scale in from 1.25x width."
+      },
+      {
+        "name": "flash",
+        "value": "1200ms",
+        "purpose": "Red Wash flash on a hypothesis when its evidence is cited."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition collapses under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "760px",
+        "purpose": "Single column, 16px gutters, short lane labels, 60px label gutter."
+      },
+      {
+        "name": "stacked",
+        "value": "1100px",
+        "purpose": "Report drops below the deck; above it the report is sticky beside the strip."
+      }
+    ],
+    "assets": [
+      {
+        "name": "stamp-ink",
+        "path": "web/stamp-ink.svg",
+        "purpose": "Procedural rubber-stamp ink mask, tiled at 80x32px with a per-hypothesis offset."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Transport Button",
+      "kind": "button",
+      "refersTo": "button-transport",
+      "description": "Ink-outlined recorder key for play, rewind and other transport actions.",
+      "html": "<div style=\"display:flex;gap:8px;align-items:center\"><button class=\"ds-tbtn ds-tbtn-sq\" aria-label=\"Play\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M4.5 3.2v9.6L12.5 8z\" fill=\"currentColor\"/></svg></button><button class=\"ds-tbtn\">Back to start</button></div>",
+      "css": ".ds-tbtn{font:500 13.5px/1 Barlow,system-ui,sans-serif;color:var(--ink, #1c2333);background:var(--sheet, #fbf8f2);border:1px solid var(--ink, #1c2333);border-radius:3px;height:34px;padding:0 12px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;transition:background .15s cubic-bezier(.16,1,.3,1),transform .12s cubic-bezier(.16,1,.3,1)} .ds-tbtn:hover{background:var(--paper-2, #efe6d8)} .ds-tbtn:active{transform:translateY(1px)} .ds-tbtn:focus-visible{outline:2px solid var(--red, #c3301b);outline-offset:2px} .ds-tbtn-sq{width:34px;padding:0;justify-content:center}"
+    },
+    {
+      "name": "Failure-moment Button",
+      "kind": "button",
+      "refersTo": "button-failure-moment",
+      "description": "The only red control: jumps the strip to the boxed failure.",
+      "html": "<button class=\"ds-tbtn-red\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"4\" width=\"11\" height=\"8\" rx=\"1\"/><path d=\"M8 1.5V4M8 12v2.5\"/></svg>Failure moment</button>",
+      "css": ".ds-tbtn-red{font:500 13.5px/1 Barlow,system-ui,sans-serif;color:var(--red, #c3301b);background:var(--sheet, #fbf8f2);border:1px solid var(--red, #c3301b);border-radius:3px;height:34px;padding:0 12px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;transition:background .15s cubic-bezier(.16,1,.3,1),transform .12s cubic-bezier(.16,1,.3,1)} .ds-tbtn-red:hover{background:var(--red-wash, rgba(195,48,27,.085))} .ds-tbtn-red:active{transform:translateY(1px)} .ds-tbtn-red:focus-visible{outline:2px solid var(--red, #c3301b);outline-offset:2px}"
+    },
+    {
+      "name": "Evidence Chip",
+      "kind": "chip",
+      "refersTo": "chip-evidence",
+      "description": "Inline evidence id after a claim; ink at rest, red when hovered or active; dashed for document-only evidence.",
+      "html": "<p class=\"ds-claim\">The base stopped dead while its command kept moving.<button class=\"ds-chip\">E6</button><button class=\"ds-chip ds-on\">E15</button><button class=\"ds-chip ds-doc\">E14</button></p>",
+      "css": ".ds-claim{font:400 15px/1.45 Barlow,system-ui,sans-serif;color:var(--ink, #1c2333);margin:0;max-width:420px} .ds-chip{display:inline-flex;align-items:center;margin:0 0 0 4px;border:1px solid var(--ink-3, #5f6476);color:var(--ink-2, #485065);background:transparent;border-radius:2px;padding:0 4px;height:18px;font:500 11px/1 'JetBrains Mono',ui-monospace,monospace;vertical-align:1px;cursor:pointer;transition:background .15s cubic-bezier(.16,1,.3,1),color .15s cubic-bezier(.16,1,.3,1)} .ds-chip:hover,.ds-chip.ds-on{background:var(--red, #c3301b);color:#fff;border-color:var(--red, #c3301b)} .ds-chip:focus-visible{outline:2px solid var(--red, #c3301b);outline-offset:2px} .ds-chip.ds-doc{border-style:dashed}"
+    },
+    {
+      "name": "Verdict Stamps",
+      "kind": "custom",
+      "refersTo": "stamp-holds",
+      "description": "Rubber stamps on each hypothesis. In the product each is masked with web/stamp-ink.svg at a per-hypothesis offset for rough ink; the mask is omitted here so the snippet is self-contained.",
+      "html": "<div style=\"display:flex;gap:18px;align-items:center;padding:8px\"><span class=\"ds-stamp ds-kept\">Holds</span><span class=\"ds-stamp ds-killed\">Refuted</span><span class=\"ds-stamp ds-open\">Open</span></div>",
+      "css": ".ds-stamp{display:inline-block;font:700 12px/1 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:5px 7px 4px;border:2px solid currentColor;border-radius:3px;transform:rotate(-4deg);white-space:nowrap} .ds-kept{color:var(--red, #c3301b);box-shadow:inset 0 0 0 1px currentColor} .ds-killed{color:var(--ink-2, #485065);transform:rotate(3deg)} .ds-open{color:var(--ink-3, #5f6476);border-color:var(--pencil, #8a8478);border-style:dashed;transform:rotate(-2deg)}"
+    },
+    {
+      "name": "Hypothesis Row",
+      "kind": "custom",
+      "refersTo": "stamp-refuted",
+      "description": "A tested hypothesis: statement, test, result and stamp; refuted ones are struck through in Red Line, never removed.",
+      "html": "<div class=\"ds-hyp\"><div class=\"ds-row\"><div><div class=\"ds-st\">The object slipped out of the gripper.</div></div><span class=\"ds-stamp2\">Refuted</span></div><div class=\"ds-res\">The gripper held the object at 35.0 deg from 6.12 s until told to open.</div></div>",
+      "css": ".ds-hyp{font-family:Barlow,system-ui,sans-serif;padding:12px 0;border-top:1px dashed var(--rule-2, #c7b195);max-width:420px} .ds-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start} .ds-st{font-size:15px;font-weight:500;line-height:1.35;color:var(--ink-2, #485065);text-decoration:line-through;text-decoration-color:var(--red-line, rgba(195,48,27,.55));text-decoration-thickness:1.5px} .ds-res{font-size:13.5px;color:var(--ink-2, #485065);margin-top:6px;line-height:1.45} .ds-stamp2{font:700 12px/1 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:5px 7px 4px;border:2px solid currentColor;border-radius:3px;transform:rotate(3deg);color:var(--ink-2, #485065)}"
+    },
+    {
+      "name": "Reel Tabs",
+      "kind": "nav",
+      "refersTo": "reel-tab",
+      "description": "One tab per recorded run in the top bar; the current run opens onto the paper with a navy underline.",
+      "html": "<nav class=\"ds-reels\"><button class=\"ds-reel\" aria-current=\"true\"><span class=\"ds-k\"><i></i>Collision</span><span class=\"ds-s\">collision-000</span></button><button class=\"ds-reel\"><span class=\"ds-k\"><i></i>Timeout</span><span class=\"ds-s\">timeout-000</span></button><button class=\"ds-reel\"><span class=\"ds-k\"><i class=\"ds-ok\"></i>Nominal</span><span class=\"ds-s\">nominal-000</span></button></nav>",
+      "css": ".ds-reels{display:flex;background:var(--sheet, #fbf8f2);border-bottom:1px solid var(--rule-2, #c7b195)} .ds-reel{border:0;border-right:1px solid var(--rule, #d9c7b0);background:none;padding:9px 13px 8px;text-align:left;display:grid;gap:1px;position:relative;cursor:pointer;color:var(--ink, #1c2333);transition:background .2s cubic-bezier(.16,1,.3,1)} .ds-reel:hover{background:var(--paper-2, #efe6d8)} .ds-reel:focus-visible{outline:2px solid var(--red, #c3301b);outline-offset:-2px} .ds-reel[aria-current=true]{background:var(--paper, #f4ede2)} .ds-reel[aria-current=true]::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--ink, #1c2333)} .ds-k{font:600 13.5px/1.2 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:7px;white-space:nowrap} .ds-k i{width:8px;height:8px;border-radius:50%;background:var(--ink, #1c2333)} .ds-k i.ds-ok{background:none;border:1.5px solid var(--ink-2, #485065)} .ds-s{font:400 12px/1.2 'JetBrains Mono',ui-monospace,monospace;color:var(--ink-3, #5f6476);white-space:nowrap}"
+    },
+    {
+      "name": "Evidence Slip",
+      "kind": "card",
+      "refersTo": "evidence-slip",
+      "description": "A cited paper document; turns white with a red edge and lifts when it is the active evidence.",
+      "html": "<div style=\"display:grid;gap:10px;max-width:280px\"><div class=\"ds-slip\"><h4><span>workcell · notes</span><span>E14</span></h4><p>Cereal box added to the bench for the pantry demo.</p></div><div class=\"ds-slip ds-on\"><h4><span>planner · scene map</span><span>E15</span></h4><p>objects: pill_bottle, tray, mug</p></div></div>",
+      "css": ".ds-slip{background:var(--sheet, #fbf8f2);border:1px solid var(--rule-2, #c7b195);padding:10px 12px 11px;border-radius:2px;transition:border-color .25s cubic-bezier(.16,1,.3,1),box-shadow .25s cubic-bezier(.16,1,.3,1),background .25s cubic-bezier(.16,1,.3,1)} .ds-slip h4{margin:0 0 4px;font:600 12px/1 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3, #5f6476);display:flex;justify-content:space-between} .ds-slip p{margin:0;font:400 12px/1.5 'JetBrains Mono',ui-monospace,monospace;color:var(--ink, #1c2333)} .ds-slip.ds-on{border-color:var(--red, #c3301b);background:#fff;box-shadow:0 0 0 1px var(--red, #c3301b),0 6px 14px -8px rgba(40,30,20,.35)}"
+    },
+    {
+      "name": "Failure Box on the Strip",
+      "kind": "custom",
+      "refersTo": "examiner-red",
+      "description": "The examiner's red frame over the failure interval on the gridded chart paper, with an evidence bracket and the navy playhead.",
+      "html": "<div class=\"ds-strip\"><div class=\"ds-fail\"><b>Contact · 9.24 s</b></div><div class=\"ds-bracket\"><b>E15</b></div><div class=\"ds-ph\"></div></div>",
+      "css": ".ds-strip{position:relative;height:120px;width:420px;border:1px solid var(--ink, #1c2333);background-color:var(--paper, #f4ede2);background-image:linear-gradient(90deg,var(--grid-major, rgba(205,88,68,.36)) 1px,transparent 1px),linear-gradient(90deg,var(--grid, rgba(219,112,92,.17)) 1px,transparent 1px),linear-gradient(0deg,var(--grid, rgba(219,112,92,.17)) 1px,transparent 1px);background-size:60px 100%,12px 100%,100% 30px} .ds-fail{position:absolute;top:0;bottom:0;left:300px;width:22px;border:2px solid var(--red, #c3301b);background:var(--red-wash, rgba(195,48,27,.085));border-radius:2px} .ds-fail b{position:absolute;top:6px;right:calc(100% + 6px);font:700 12px/1 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--red, #c3301b);white-space:nowrap;background:var(--paper, #f4ede2);padding:2px 4px} .ds-bracket{position:absolute;left:290px;top:70px;width:44px;height:36px;border:2px solid var(--red, #c3301b);border-radius:3px} .ds-bracket b{position:absolute;right:100%;top:50%;transform:translate(-6px,-50%);background:var(--red, #c3301b);color:#fff;font:600 11px/1 'JetBrains Mono',ui-monospace,monospace;padding:3px 5px;border-radius:2px} .ds-ph{position:absolute;top:0;bottom:0;left:250px;border-left:1.5px solid var(--ink, #1c2333)}"
+    },
+    {
+      "name": "Simulated Badge",
+      "kind": "chip",
+      "refersTo": "badge-simulated",
+      "description": "Marks every synthetic run in the run facts.",
+      "html": "<span class=\"ds-sim\">SIMULATED</span>",
+      "css": ".ds-sim{font:600 11px/1 'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:.14em;color:var(--ink-2, #485065);border:1px solid var(--rule-2, #c7b195);padding:3px 6px 2px;border-radius:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Examiner's Chart Strip",
+    "overview": "A run is a length of salmon-gridded chart paper fed out of a recorder, and the agent is the examiner who marks it up. The paper carries the measurements in pen; the examiner carries the verdict in red. Everything on the surface is either a trace of what the robot did or a mark someone made about it, and the two never blur: instrument ink is navy, blue and violet; judgment is red; refuted ideas are struck through, not erased.\n\nThe world is warm, dense and literal. Density is a feature here, the way it is on a strip-chart or a flight-data printout: twelve lanes of signal stacked on a shared time axis, labelled in condensed instrument capitals, with every number in a monospaced readout. The grid is not texture; it is the real time axis (fine lines every 0.2 s, heavy lines every second), so the paper itself is a ruler. Depth is almost absent. Paper lies flat; only physical objects resting on it (the camera viewfinder, a document slip pulled forward, a tooltip) lift with a soft shadow.\n\nThe world explicitly refuses the dark, multi-panel log dashboard with a chat sidebar. It also refuses any marker that is not data: no kickers above headings, no ornamental badges, no gradients for mood. The one rubber-stamp texture is earned, because stamping HOLDS or REFUTED on a hypothesis is the examiner's actual act.",
+    "keyCharacteristics": [
+      "Warm chart-paper ground with a red-salmon grid that measures time.",
+      "A pen code: solid navy = measured, dashed blue = commanded, violet = seen by the camera.",
+      "Examiner red reserved for findings, failures, limits and refutations.",
+      "Condensed instrument capitals for labels; monospaced tabular figures for every measured value.",
+      "Rubber stamps with rough ink edges and individual tilt as the verdict on each hypothesis.",
+      "Cancel, never delete: refuted claims stay on the page, struck through."
+    ],
+    "rules": [
+      {
+        "name": "The Examiner's Red Rule",
+        "body": "Red marks a finding, never a resting state. It appears only on the failure box, active evidence brackets, HOLDS stamps, active chips, refutation strikes, limit lines, bad events and the Failure-moment button. Resting chips are ink-outlined; hover and the focus ring may borrow red because they preview the finding.",
+        "section": "colors"
+      },
+      {
+        "name": "The Pen Code Rule",
+        "body": "Solid navy is measured, dashed blue is commanded, violet is what the camera saw. A pen color is a data claim; never reuse one for decoration or swap their meanings between lanes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Ground Rule",
+        "body": "No surface is pure white at rest. White is reserved for a document slip that has been pulled forward as cited evidence.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readout Rule",
+        "body": "Every measured number, timestamp, id and count is set in JetBrains Mono with tabular figures, even mid-sentence in prose. Words are Barlow; values are mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Instrument Capitals Rule",
+        "body": "Uppercase is only for Barlow Condensed instrument labels, with tracking between 0.08em and 0.2em. Never uppercase Barlow or the mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shared Axis Rule",
+        "body": "Anything placed on the strip is positioned by its timestamp against the shared gutter. A mark that is not at a real time does not go on the strip.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Surfaces lie flat. A shadow means a physical object resting on the paper (a mounted photo, a slip pulled forward, a note held over the page) and appears on nothing else.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Dashed Means Unproven Rule",
+        "body": "Solid is measured or decided; dashed is intended, inferred, pencilled or still open.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** keep the page ground Chart Paper and the report column Clean Sheet; the warm paper is the approved world.",
+      "**Do** reserve Examiner Red for findings: failure box, active brackets, HOLDS stamps, active chips, refutation strikes, limit lines, bad events, the Failure-moment button.",
+      "**Do** outline resting chips in ink and let them fill red only when hovered or active.",
+      "**Do** draw the chart grid only inside the strip lanes, at real time intervals (0.2 s fine, 1 s heavy).",
+      "**Do** set every measured value, id and timestamp in JetBrains Mono with tabular figures.",
+      "**Do** keep refuted hypotheses on the page, struck through in Red Line and stamped REFUTED.",
+      "**Do** position every strip mark by its timestamp against the shared label gutter (84px, 60px on phones).",
+      "**Do** use Red on Film, not Examiner Red, for any mark drawn over camera imagery.",
+      "**Do** honor reduced motion: stamps, brackets, the failure box and flashes all collapse to instant."
+    ],
+    "donts": [
+      "**Don't** build a dark, multi-panel log dashboard with a chat sidebar; this world is paper.",
+      "**Don't** put an eyebrow or kicker line above the verdict, the run title or any heading.",
+      "**Don't** use Examiner Red for resting states, decoration, brand accents or generic emphasis.",
+      "**Don't** reuse a pen color (navy, dashed blue, violet) for anything that is not that kind of data.",
+      "**Don't** set text in Pencil; the lightest text tone is Ink Faint.",
+      "**Don't** add shadows to flat paper surfaces, cards or lanes; only the viewfinder, a pulled slip and the tooltip lift.",
+      "**Don't** delete or hide a refuted hypothesis to tidy the report.",
+      "**Don't** round corners past 3px or introduce pill shapes outside the reel status dots."
+    ]
+  }
+}
