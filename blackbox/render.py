@@ -163,5 +163,7 @@ def render_frame(sim, tcp) -> bytes:
     dr.text((8, H - 16), stamp, fill=(236, 236, 228))
     dr.text((W - 52, 6), "SIM", fill=(236, 236, 228))
     buf = io.BytesIO()
-    img.save(buf, "JPEG", quality=74, optimize=True)
+    origin = (f"origin: BLACKBOX simulator camera frame, scenario {sim.setup.name} seed {sim.setup.seed}, t={sim.t:.2f}s; "
+              "rendered procedurally by blackbox/render.py (Pillow), no image model, no photo")
+    img.save(buf, "JPEG", quality=74, optimize=True, comment=b"impeccable:prompt\0" + origin.encode())  # provenance, read by impeccable's embed-prompt scan
     return buf.getvalue()

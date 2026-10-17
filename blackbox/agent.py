@@ -91,6 +91,7 @@ class LLMBackend:
     BLACKBOX_LLM_BASE_URL  default https://integrate.api.nvidia.com/v1 (a Meterless gateway works too)
     BLACKBOX_LLM_API_KEY   or NVIDIA_API_KEY
     BLACKBOX_LLM_MODEL     default nvidia/nemotron-3.5-lightning-30b-a3b
+    BLACKBOX_LLM_THINKING  1/0 sends chat_template_kwargs.enable_thinking (unset: model default)
     """
 
     name = "llm"
@@ -101,10 +102,14 @@ class LLMBackend:
         self.model = model or os.environ.get("BLACKBOX_LLM_MODEL") or "nvidia/nemotron-3.5-lightning-30b-a3b"
         self.timeout = timeout
         self.calls = 0
+        th = os.environ.get("BLACKBOX_LLM_THINKING")
+        self.thinking = None if th is None else th.lower() in ("1", "true", "on")
 
     def chat(self, system: str, user: str) -> dict:
         body = {"model": self.model, "temperature": 0.2, "max_tokens": 2000,
                 "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+        if self.thinking is not None:  # Nemotron 3.x reasoning switch; unset leaves the model's default
+            body["chat_template_kwargs"] = {"enable_thinking": self.thinking}
         req = urllib.request.Request(f"{self.base_url}/chat/completions", data=json.dumps(body).encode(),
                                      headers={"Content-Type": "application/json", "Authorization": f"Bearer {self.api_key}"})
         try:

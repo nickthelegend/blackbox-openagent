@@ -13,7 +13,7 @@
   :root {
     --paper: #f4ede2; --paper-2: #efe6d8; --paper-3: #e8dccb; --sheet: #fbf8f2;
     --grid: rgba(219, 112, 92, .17); --grid-major: rgba(205, 88, 68, .36); --rule: #d9c7b0; --rule-2: #c7b195;
-    --ink: #1c2333; --ink-2: #485065; --ink-3: #6f7486;
+    --ink: #1c2333; --ink-2: #485065; --ink-3: #5f6476;
     --cmd: #2c66a8; --track: #6a4f9e;
     --red: #c3301b; --red-2: #a8240f; --red-wash: rgba(195, 48, 27, .085); --red-line: rgba(195, 48, 27, .55);
     --pencil: #8a8478;
@@ -42,19 +42,20 @@
   .brand { display: flex; align-items: center; gap: 10px; padding: 0 18px; border-right: 1px solid var(--rule); flex: none; }
   .brand svg { width: 26px; height: 26px; }
   .brand b { font: 700 19px/1 var(--cond); letter-spacing: .2em; }
-  .reels { display: flex; overflow-x: auto; scrollbar-width: none; flex: 1; }
+  .reels { display: flex; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+  .reels.more { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); }
   .reels::-webkit-scrollbar { display: none; }
-  .reel { flex: none; border: 0; border-right: 1px solid var(--rule); background: none; padding: 9px 16px 8px; text-align: left; display: grid; gap: 1px; min-width: 132px; position: relative;
+  .reel { flex: none; border: 0; border-right: 1px solid var(--rule); background: none; padding: 9px 13px 8px; text-align: left; display: grid; gap: 1px; position: relative;
     transition: background .2s var(--ease); }
   .reel:hover { background: var(--paper-2); }
   .reel .k { font: 600 13.5px/1.2 var(--cond); letter-spacing: .08em; text-transform: uppercase; display: flex; align-items: center; gap: 7px; }
-  .reel .k i { width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex: none; }
+  .reel .k i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); flex: none; }
   .reel .k i.ok { background: none; border: 1.5px solid var(--ink-2); }
   .reel .s { font: 400 12px/1.2 var(--mono); color: var(--ink-3); white-space: nowrap; }
   .reel .k { white-space: nowrap; }
   .reel[aria-current="true"] { background: var(--paper); }
   .reel[aria-current="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--ink); }
-  .examiner { display: flex; align-items: center; gap: 8px; padding: 0 18px; border-left: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-2); flex: none; white-space: nowrap; }
+  .examiner { display: flex; align-items: center; gap: 8px; padding: 0 16px; border-left: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-2); flex: none; white-space: nowrap; }
   .examiner b { color: var(--ink); font-weight: 600; }
 
   /* layout ------------------------------------------------------------------ */
@@ -65,11 +66,11 @@
 
   /* run head ------------------------------------------------------------------ */
   .head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: stretch; }
-  .finder { position: relative; width: 360px; aspect-ratio: 4 / 3; background: #222; border: 1px solid var(--ink); box-shadow: 0 1px 0 rgba(255,255,255,.6), 0 6px 16px -8px rgba(40, 30, 20, .45); }
+  .finder { position: relative; width: 300px; aspect-ratio: 4 / 3; background: #222; border: 1px solid var(--ink); box-shadow: 0 1px 0 rgba(255,255,255,.6), 0 6px 16px -8px rgba(40, 30, 20, .45); }
   .finder img { width: 100%; height: 100%; display: block; image-rendering: auto; }
   .finder svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
   .finder .cap { position: absolute; left: 0; right: 0; top: 100%; display: flex; justify-content: space-between; font: 400 12px/1 var(--mono); color: var(--ink-3); padding-top: 6px; }
-  .meta { display: grid; align-content: space-between; gap: 14px; min-width: 0; }
+  .meta { display: grid; align-content: start; gap: 22px; min-width: 0; }
   .meta h1 { margin: 0; font: 600 clamp(24px, 2.4vw, 32px)/1.08 var(--cond); letter-spacing: -.005em; text-wrap: balance; }
   .meta h1 span { color: var(--ink-3); font-weight: 500; }
   .facts { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13.5px; color: var(--ink-2); margin-top: 8px; }
@@ -91,19 +92,20 @@
   .stagenow b { color: var(--ink); font-weight: 500; }
 
   /* the strip ------------------------------------------------------------------ */
-  .strip { margin-top: 34px; position: relative; user-select: none; -webkit-user-select: none; scroll-margin-top: 64px; }
+  .strip { margin-top: 30px; position: relative; user-select: none; -webkit-user-select: none; scroll-margin-top: 64px; }
   .slip { scroll-margin-top: 64px; }
   .ticker { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); }
   .ticker .lbl, .lane .lbl { font: 600 12px/1.1 var(--cond); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding: 0 8px 0 0; display: flex; flex-direction: column; justify-content: center; }
   .lane .lbl small { font: 400 11px/1.2 var(--mono); letter-spacing: 0; text-transform: none; color: var(--ink-3); margin-top: 2px; }
   .film { position: relative; height: 46px; overflow: hidden; border: 1px solid var(--ink); border-bottom: 0; background: #1d1d1d; display: flex; }
   .film img { height: 100%; flex: none; opacity: .92; border-right: 1px solid #000; }
+  .film .hit { position: absolute; top: 0; bottom: 0; border: 2px solid #e2492f; box-shadow: inset 0 0 0 1px rgba(0,0,0,.35); pointer-events: none; animation: bracket .7s var(--ease) both; }
   .plot { position: relative; cursor: ew-resize; touch-action: pan-y; }
   .ruler { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); }
   .ruler .ticks { position: relative; height: 22px; border-left: 1px solid var(--ink); border-right: 1px solid var(--ink); border-top: 1px solid var(--ink); background: var(--sheet); }
   .ruler .ticks span { position: absolute; top: 5px; transform: translateX(-50%); font: 400 11px/1 var(--mono); color: var(--ink-3); }
-  .lane { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); height: 44px; }
-  .lane.tall { height: 52px; }
+  .lane { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); height: 40px; }
+  .lane.tall { height: 48px; }
   .lane .lbl { border-right: 1px solid var(--ink); }
   .lane svg { display: block; width: 100%; height: 100%; overflow: hidden; border-right: 1px solid var(--ink); border-top: 1px solid var(--rule-2); background: var(--paper); }
   .lane:first-child svg { border-top: 1px solid var(--ink); }
@@ -127,6 +129,9 @@
   .fail b { position: absolute; top: 27px; left: 4px; font: 700 12px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; color: var(--red); white-space: nowrap; background: var(--paper); padding: 2px 4px; }
   .fail.narrow b { left: calc(100% + 6px); }
   .fail.narrow.flip b { left: auto; right: calc(100% + 6px); }
+  .pencil { position: absolute; border: 1px dashed rgba(72, 80, 101, .55); border-radius: 2px; pointer-events: none; }
+  .lane .lbl .val { font: 500 11px/1.2 var(--mono); color: var(--ink); letter-spacing: 0; text-transform: none; margin-top: 2px; }
+  .lane .lbl .short { display: none; }
   .bracket { position: absolute; border: 2px solid var(--red); border-radius: 3px; pointer-events: none; animation: bracket .7s var(--ease) both; }
   .bracket b { position: absolute; right: 100%; top: 50%; transform: translate(-6px, -50%); background: var(--red); color: #fff; font: 600 11px/1 var(--mono); padding: 3px 5px; border-radius: 2px; white-space: nowrap; }
   .bracket.edge b { right: auto; left: 100%; transform: translate(6px, -50%); }
@@ -137,27 +142,29 @@
   .slip h4 { margin: 0 0 4px; font: 600 12px/1 var(--cond); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); display: flex; justify-content: space-between; }
   .slip p { margin: 0; font-family: var(--mono); font-size: 12px; line-height: 1.5; color: var(--ink); word-break: break-word; }
   .slip.on { border-color: var(--red); background: #fff; box-shadow: 0 0 0 1px var(--red), 0 6px 14px -8px rgba(40, 30, 20, .35); }
+  .hint-touch { display: none; }
+  @media (pointer: coarse) { .hint-fine { display: none; } .hint-touch { display: inline; } }
   .strip-note { margin: 14px 0 0; font-size: 12px; color: var(--ink-3); display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
   .key { display: inline-flex; align-items: center; gap: 6px; }
   .key svg { width: 22px; height: 8px; }
 
   /* the examiner's sheet ------------------------------------------------------------------ */
-  .sheet h2 { margin: 0; font: 600 13.5px/1 var(--cond); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
-  .verdict { margin: 12px 0 0; font: 600 clamp(25px, 2.3vw, 31px)/1.1 var(--cond); letter-spacing: -.005em; text-wrap: pretty; }
+  .sheet .work h2 { margin: 0; font: 600 13.5px/1 var(--cond); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .verdict { margin: 0; font: 600 clamp(25px, 2.3vw, 31px)/1.1 var(--cond); letter-spacing: -.005em; text-wrap: pretty; }
   .verdict.ok { color: var(--ink); }
   .tally { margin: 12px 0 0; font-size: 13.5px; color: var(--ink-2); }
   .tally b { color: var(--ink); font-weight: 600; }
   .claims { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 0; }
   .claims li { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 12px; padding: 11px 0; border-top: 1px solid var(--rule); font-size: 15px; line-height: 1.45; }
   .claims li .kind { font: 600 12px/1.5 var(--cond); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); padding-top: 1px; }
-  .claims li.finding .kind, .claims li.cause .kind { color: var(--red); }
+  .claims li.finding .kind, .claims li.cause .kind { color: var(--ink); }
   .claims li.ruled_out { color: var(--ink-2); font-size: 13.5px; }
   .ruled { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
   .ruled li { display: block; padding: 0; border: 0; font-size: 13.5px; }
   .ruled s { color: var(--ink); text-decoration-color: var(--red-line); text-decoration-thickness: 1.5px; }
   .claims li.fix { background: linear-gradient(90deg, var(--red-wash), transparent 70%); }
   .chips { display: inline; }
-  .chip { display: inline-flex; align-items: center; margin: 0 0 0 4px; border: 1px solid var(--red-line); color: var(--red); background: transparent; border-radius: 2px; padding: 0 4px; height: 18px; font: 500 11px/1 var(--mono);
+  .chip { display: inline-flex; align-items: center; margin: 0 0 0 4px; border: 1px solid var(--ink-3); color: var(--ink-2); background: transparent; border-radius: 2px; padding: 0 4px; height: 18px; font: 500 11px/1 var(--mono);
     vertical-align: 1px; transition: background .15s var(--ease), color .15s var(--ease); }
   .chip:hover, .chip.on { background: var(--red); color: #fff; border-color: var(--red); }
   .chip.doc { border-style: dashed; }
@@ -184,7 +191,9 @@
   .hyp.flash { animation: flash 1.2s var(--ease); }
   @keyframes flash { 0%, 30% { background: var(--red-wash); } 100% { background: transparent; } }
   .stamp { font: 700 12px/1 var(--cond); letter-spacing: .14em; text-transform: uppercase; padding: 5px 7px 4px; border: 2px solid currentColor; border-radius: 3px; transform: rotate(-4deg); white-space: nowrap;
-    filter: url(#rough); margin-top: 1px; }
+    margin-top: 1px; -webkit-mask: url(stamp-ink.svg) 0 0 / 80px 32px repeat; mask: url(stamp-ink.svg) 0 0 / 80px 32px repeat; }
+  .stamp.killed { -webkit-mask-position: 23px 9px; mask-position: 23px 9px; }
+  .stamp.inconclusive { -webkit-mask-position: 51px 17px; mask-position: 51px 17px; }
   .stamp.kept { color: var(--red); box-shadow: inset 0 0 0 1px currentColor; }
   .stamp.killed { color: var(--ink-2); transform: rotate(3deg); }
   .stamp.inconclusive { color: var(--pencil); border-style: dashed; transform: rotate(-2deg); }
@@ -225,7 +234,8 @@
     .lane { height: 38px; }
     .lane.tall { height: 44px; }
     .ticker .lbl, .lane .lbl { font-size: 11px; letter-spacing: .06em; }
-    .lane .lbl small + small { display: none; }
+    .lane .lbl .long { display: none; }
+    .lane .lbl .short { display: inline; }
     .claims li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
     .docs { grid-template-columns: minmax(0, 1fr); }
   }
@@ -239,7 +249,7 @@
 THESIS: The run is a strip of chart paper and the agent is the examiner who marks it up; every red mark is a test it ran. Refuses the dark multi-panel log dashboard with a chat sidebar.
 OWN-WORLD: Salmon-gridded chart paper (#f4ede2) whose grid is the real time axis; navy pen for measured, dashed blue pen for commanded, violet for camera tracks; examiner red (#c3301b) only for findings, the failure box, brackets and HOLDS stamps; rubber stamps with rough ink edges; Barlow Condensed instrument labels, JetBrains Mono for every measured number.
 STORY: A judge sees what failed, why, and what was ruled out; clicks any claim and the strip, the camera frame and the documents jump to the moment that proves it.
-FIRST VIEWPORT: Run reels across the top; camera viewfinder (360px) beside the run title, clock and transport; the full chart strip below with the failure moment boxed in red; the examiner's sheet on the right: verdict headline, cited claims, stamped hypothesis tree.
+FIRST VIEWPORT: Run reels across the top; camera viewfinder (300px) beside the run title, clock and transport; the full chart strip below with the failure moment boxed in red; the examiner's sheet on the right: verdict headline, cited claims, stamped hypothesis tree.
 FORM: Chart Recorder Strip, assigned direction (3rd of 7 on my list), seed 626c6e59. Raises: cancel not delete (ticket wallet); every mark is data (datamatics); length is duration (labanotation); registered frames (botanical); claim beside proof (monochrome canon).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
@@ -336,11 +346,13 @@ function laneOf(ch) {
 /* ---------- render ---------- */
 function renderReels() {
   $("#reels").innerHTML = INDEX.runs.map(r => `
-    <button class="reel" data-id="${esc(r.id)}" aria-current="${R && R.id === r.id}">
+    <button class="reel" data-id="${esc(r.id)}" aria-current="${R && R.id === r.id}" title="${esc(r.goal)} · ${r.duration.toFixed(1)} s">
       <span class="k"><i class="${r.outcome === "success" ? "ok" : ""}" aria-hidden="true"></i>${esc(NAMES[r.scenario] || r.scenario)}</span>
-      <span class="s">${esc(r.id)} · ${r.duration.toFixed(1)} s</span>
+      <span class="s">${esc(r.id)}</span>
     </button>`).join("");
   $("#reels").onclick = e => { const b = e.target.closest(".reel"); if (b) load(b.dataset.id); };
+  $("#reels").onscroll = reelCue;
+  document.fonts.ready.then(reelCue);
 }
 
 function render() {
@@ -394,15 +406,14 @@ function render() {
         <span class="key"><svg viewBox="0 0 22 8"><path d="M1 4h20" stroke="#2c66a8" stroke-width="1.4" stroke-dasharray="4 3"/></svg>commanded</span>
         <span class="key"><svg viewBox="0 0 22 8"><path d="M1 4h20" stroke="#6a4f9e" stroke-width="1.8"/></svg>object, from the camera</span>
         <span class="key"><svg viewBox="0 0 22 8"><rect x="1" y="1" width="20" height="6" fill="rgba(195,48,27,.26)"/></svg>tracking error</span>
-        <span>Drag the strip or use ← → to scrub; space plays.</span>
+        <span class="hint-fine">Drag the strip or use ← → to scrub; space plays.</span><span class="hint-touch">Drag the strip to scrub.</span>
       </div>
       <div class="docs" id="docs"></div>
     </div>
   </section>
 
   <aside class="sheet" id="why" aria-label="The examiner's report">
-    <h2>${failed ? "Why it failed" : "Verdict"}</h2>
-    <p class="verdict ${failed ? "" : "ok"}">${esc(ex.headline)}</p>
+    <h2 class="verdict ${failed ? "" : "ok"}">${esc(ex.headline)}</h2>
     <p class="tally"><b class="num">${counts.tested}</b> hypotheses tested against the log: <b class="num">${counts.kept}</b> hold, <b class="num">${counts.killed}</b> refuted${counts.inconclusive ? `, <b class="num">${counts.inconclusive}</b> open` : ""}. ${counts.controls.length ? `Every one that holds was re-run on nominal run <span class="num">${esc(counts.controls[0])}</span> and stayed silent.` : ""}</p>
     <ul class="claims" id="claims"></ul>
     <section class="work">
@@ -417,6 +428,31 @@ function render() {
   bindStrip();
   setTime(fm ? Math.max(0, fm.t0 - 1.2) : 0, false);
   if (fm) drawFailBox(fm);
+  drawPencil();
+}
+
+function drawPencil() {
+  // every span a kept hypothesis rests on, pencilled faintly onto the strip
+  const ov = $("#overlay"), dur = S.sig.dur, seen = new Set();
+  for (const h of X.hypotheses) {
+    if (h.status !== "kept" || h.id === "goal.met") continue;
+    for (const id of h.evidence) {
+      const e = evById(id), lane = e && laneOf(e.channel);
+      if (!e || e.t0 == null || !lane || lane === "film" || seen.has(id)) continue;
+      const el = document.querySelector(`.lane[data-lane="${CSS.escape(lane)}"]`);
+      if (!el) continue;
+      seen.add(id);
+      const p = document.createElement("div");
+      p.className = "pencil";
+      p.style.cssText = `left:calc(${t0pct(e.t0)}% - 2px);width:calc(${Math.max(.4, (Math.max(e.t1, e.t0) - e.t0) / dur * 100)}% + 4px);top:${el.offsetTop + 2}px;height:${el.offsetHeight - 4}px`;
+      ov.appendChild(p);
+    }
+  }
+}
+
+function reelCue() {
+  const r = $("#reels");
+  r.classList.toggle("more", r.scrollWidth > r.clientWidth + 2 && r.scrollLeft + r.clientWidth < r.scrollWidth - 2);
 }
 
 function buildFilm() {
@@ -480,6 +516,7 @@ function buildLanes() {
         body += `<line class="evtick ${bad ? "bad" : ""}" x1="${x}" x2="${x}" y1="${bad ? 12 : 40}" y2="${H}"><title>${esc(e.msg)}</title></line>`;
       }
     } else {
+      L.unit = { deg: "°", "deg open": "°", A: " A", cm: " cm", "m/s²": " m/s²" }[L.sub] || "";
       let lo = Infinity, hi = -Infinity;
       for (const y of L.y) for (const v of y) { if (v < lo) lo = v; if (v > hi) hi = v; }
       if (L.cmd) for (const v of L.cmd) { if (v < lo) lo = v; if (v > hi) hi = v; }
@@ -505,9 +542,10 @@ function buildLanes() {
       if (L.cmd) body += `<path class="cmd" d="${path(sig.t, L.cmd, dur, lo, hi, W, H)}"/>`;
       for (const y of L.y) body += `<path class="ink ${L.thin ? "thin" : ""}" d="${path(sig.t, y, dur, lo, hi, W, H)}"/>`;
       if (L.tracks) for (const tr of L.tracks) body += `<path class="trk" d="${path(tr.t, tr.z, dur, lo, hi, W, H)}"><title>${esc(tr.label)} (camera)</title></path>`;
-      range = `<small class="num">${fmtR(lo)}…${fmtR(hi)}</small>`;
+      range = `${fmtR(lo)}…${fmtR(hi)}`;
     }
-    div.innerHTML = `<div class="lbl">${esc(L.label)}<small>${esc(L.sub)}</small>${range}</div><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${body}</svg>`;
+    const short = { wrist_flex: "Wr flex", wrist_roll: "Wr roll", shoulder: "Shoulder" }[L.label.replace(" ", "_")] || L.label;
+    div.innerHTML = `<div class="lbl" title="${esc(L.label)} (${esc(L.sub)})${range ? " range " + range : ""}"><span class="long">${esc(L.label)}</span><span class="short">${esc(short)}</span>${L.kind === "events" ? `<small>${esc(L.sub)}</small>` : `<span class="val num" data-val="${esc(L.id)}"></span>`}</div><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${body}</svg>`;
     lanesEl.appendChild(div);
   }
 }
@@ -592,6 +630,14 @@ function setTime(t, follow = true) {
   let ph = $("#playhead");
   if (!ph) { ph = document.createElement("div"); ph.id = "playhead"; ph.className = "playhead"; $("#overlay").appendChild(ph); }
   ph.style.left = (S.t / sig.dur * 100) + "%";
+  const k = Math.min(sig.n - 1, Math.max(0, Math.round(S.t / sig.dur * (sig.n - 1))));
+  for (const L of S.lanes || []) {
+    if (!L.y) continue;
+    const el = document.querySelector(`[data-val="${CSS.escape(L.id)}"]`);
+    if (!el) continue;
+    const v = L.y.length > 1 ? Math.max(...L.y.map(y => y[k])) : L.y[0][k];
+    el.textContent = (Math.abs(v) >= 10 ? v.toFixed(0) : v.toFixed(Math.abs(v) >= 1 ? 1 : 2)) + L.unit;
+  }
   $("#plot").setAttribute("aria-valuenow", S.t.toFixed(2));
   $("#plot").setAttribute("aria-valuetext", `${S.t.toFixed(2)} seconds${st ? ", " + st.msg : ""}`);
   drawRing();
@@ -648,7 +694,7 @@ function focusEvidence(id) {
   S.activeEv = id;
   document.querySelectorAll(".chip.on, .slip.on").forEach(n => n.classList.remove("on"));
   document.querySelectorAll(`.chip[data-ev="${CSS.escape(id)}"]`).forEach(n => n.classList.add("on"));
-  document.querySelectorAll(".bracket").forEach(n => n.remove());
+  document.querySelectorAll(".bracket, .film .hit").forEach(n => n.remove());
   X.hypotheses.filter(h => h.evidence.includes(id)).forEach(h => {
     const n = document.querySelector(`.hyp[data-h="${CSS.escape(h.id)}"]`);
     if (n) { n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash"); }
@@ -676,6 +722,16 @@ function focusEvidence(id) {
   b.innerHTML = `<b>${esc(id)}</b>`;
   if (left < 12) b.classList.add("edge");
   ov.appendChild(b);
+  // the camera frame for this moment, marked on the ticker (on phones the viewfinder is off-screen)
+  const film = $("#film"), n = film.children.length;
+  film.querySelectorAll(".hit").forEach(h => h.remove());
+  if (n) {
+    const slot = Math.min(n - 1, Math.floor(e.t0 / dur * n));
+    const hit = document.createElement("div");
+    hit.className = "hit";
+    hit.style.cssText = `left:${(slot / n * 100).toFixed(3)}%;width:${(100 / n).toFixed(3)}%`;
+    film.appendChild(hit);
+  }
   const strip = $("#strip");
   const r = strip.getBoundingClientRect();
   if (r.top < 0 || r.top > innerHeight * .6) strip.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
@@ -764,7 +820,7 @@ document.addEventListener("pointerout", ev => { if (ev.target.closest(".chip")) 
 addEventListener("scroll", () => tip.classList.remove("show"), { passive: true });
 
 let rz;
-addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (S) { buildFilm(); buildTicks(); } }, 150); });
+addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { reelCue(); if (S) { buildFilm(); buildTicks(); } }, 150); });
 
 /* ---------- load ---------- */
 async function load(id, evFocus) {
