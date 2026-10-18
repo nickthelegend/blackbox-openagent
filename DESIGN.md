@@ -21,6 +21,8 @@ colors:
   ink-3: "#5f6476"
   pencil: "#8a8478"
   film-black: "#1d1d1d"
+  cited-white: "#ffffff"
+  red-on-ink: "#f2a493"
 typography:
   headline:
     fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
@@ -82,7 +84,7 @@ typography:
     fontFeature: "\"tnum\""
   data-sm:
     fontFamily: "JetBrains Mono, ui-monospace, monospace"
-    fontSize: "11px"
+    fontSize: "12px"
     fontWeight: 500
     lineHeight: 1
     fontFeature: "\"tnum\""
@@ -97,8 +99,8 @@ spacing:
   lg: "18px"
   xl: "22px"
   section: "30px"
-  label-gutter: "84px"
-  label-gutter-phone: "60px"
+  label-gutter: "92px"
+  label-gutter-phone: "66px"
 components:
   button-transport:
     backgroundColor: "{colors.sheet}"
@@ -256,7 +258,7 @@ A paper-and-ink palette: warm cream neutrals, a three-pen data code, and one exa
 - **Label** (600, 12px, 0.1em, uppercase, Barlow Condensed): lane names, claim kinds (Outcome, Finding, Cause, Ruled out, Fix), slip headers, reel names (13.5px, 0.08em).
 - **Stamp** (700, 12px, 0.14em, uppercase, Barlow Condensed): HOLDS / REFUTED / OPEN.
 - **Data** (400, 12px, 1.5, JetBrains Mono): document slips, log lines, run ids.
-- **Data Small** (500, 11px, JetBrains Mono): chips, live lane values, ruler figures, bracket tags, units.
+- **Data Small** (500, 12px, JetBrains Mono; live lane values 12.5px): chips, live lane values, ruler figures, bracket tags, units. 12px is the floor for any text on the page.
 
 ### Named Rules
 **The Readout Rule.** Every measured number, timestamp, id and count is set in JetBrains Mono with tabular figures, even mid-sentence in prose. Words are Barlow; values are mono.
@@ -267,7 +269,7 @@ A paper-and-ink palette: warm cream neutrals, a three-pen data code, and one exa
 
 Two columns on desktop: the recording deck on the left (fluid) and the examiner's report on the right (380–470px), split by a Paper Rule Dark line. Above 1100px the report is sticky under the 52px top bar and scrolls on its own, so the verdict stays beside the strip while you scrub. Between 760 and 1100px the report drops below the deck; under 760px the page is a single column with 16px side gutters, the wordmark and examiner credit hide, lane labels shorten, and claims stack their kind label above the text.
 
-The strip is the spine. Every row of the strip (camera ticker, time ruler, each signal lane) shares one label gutter (84px desktop, 60px phone) so all traces start on the same x and time aligns vertically through the whole stack. Horizontal position is time and nothing else; length is duration. Lanes are 40px (48px for Height), 38/44px on phones.
+The strip is the spine. Every row of the strip (camera ticker, time ruler, each signal lane) shares one label gutter (92px desktop, 66px phone) so all traces start on the same x and time aligns vertically through the whole stack. Horizontal position is time and nothing else; length is duration. Lanes are 41px (48px for Height), 38/44px on phones.
 
 Spacing is a tight instrument rhythm: 6–8px inside controls, 12px between related rows, 18–22px column padding, 30px between major blocks (head to strip, claims to hypothesis tree). The top bar is a single bordered row of cells (brand, reel tabs, examiner), each divided by a rule, with the reel row scrolling horizontally and fading at its edge when more runs exist.
 
@@ -304,7 +306,7 @@ Tactile, square, outlined in ink, like the keys on a recorder's transport.
 - **Text link (phone verdict):** "Read the examiner's report" in Examiner Red, 14px/500, underlined at 3px offset.
 
 ### Chips
-- **Style:** inline evidence references (E1, E15) after a claim: transparent ground, 1px Ink Faint outline, Ink Faded mono 11px, 18px tall, 2px corners.
+- **Style:** inline evidence references (E1, E15) after a claim: transparent ground, 1px Ink Faint outline, Ink Faded mono 12px, 20px tall, 2px corners.
 - **State:** hover or active fills Examiner Red with white text (keyboard focus takes the house 2px red focus ring); active chips stay red everywhere that evidence id appears. Document-only evidence (no timestamp) uses a dashed outline.
 
 ### Cards / Containers
@@ -327,7 +329,7 @@ The recording itself. A film ticker of camera frames on Film Black, a mono time 
 Rubber stamps beside each hypothesis: Stamp type in a 2px border of the text color, 3px corners, masked by the stamp-ink texture (`web/stamp-ink.svg`, 80×32px tile) at a per-hypothesis offset. HOLDS is Examiner Red with a doubled inner edge; REFUTED is Ink Faded and its statement is struck through in Red Line; OPEN has a dashed Pencil border. They land in sequence (0.42s, 55ms apart) from 1.7× scale and -12°.
 
 ### Simulated Badge
-A small condensed SIMULATED tag (11px, 600, 0.14em) with a 1px Paper Rule Dark outline in the run facts. Every synthetic run carries it.
+A small condensed SIMULATED tag (12px, 600, 0.14em) with a 1px Paper Rule Dark outline in the run facts. Every synthetic run carries it.
 
 ## Do's and Don'ts
 
@@ -338,7 +340,7 @@ A small condensed SIMULATED tag (11px, 600, 0.14em) with a 1px Paper Rule Dark o
 - **Do** draw the chart grid only inside the strip lanes, at real time intervals (0.2 s fine, 1 s heavy).
 - **Do** set every measured value, id and timestamp in JetBrains Mono with tabular figures.
 - **Do** keep refuted hypotheses on the page, struck through in Red Line and stamped REFUTED.
-- **Do** position every strip mark by its timestamp against the shared label gutter (84px, 60px on phones).
+- **Do** position every strip mark by its timestamp against the shared label gutter (92px, 66px on phones).
 - **Do** use Red on Film, not Examiner Red, for any mark drawn over camera imagery.
 - **Do** honor reduced motion: stamps, brackets, the failure box and flashes all collapse to instant.
 
@@ -351,3 +353,10 @@ A small condensed SIMULATED tag (11px, 600, 0.14em) with a 1px Paper Rule Dark o
 - **Don't** add shadows to flat paper surfaces, cards or lanes; only the viewfinder, a pulled slip and the tooltip lift.
 - **Don't** delete or hide a refuted hypothesis to tidy the report.
 - **Don't** round corners past 3px or introduce pill shapes outside the reel status dots.
+
+## Failure jump and evidence links (interaction contract)
+
+- **Failure moment** (button, `F` key, or `#run=<id>&jump=1`) sweeps the playhead to the failure's start. It brackets every strip lane the symptom's evidence lives on and turns those lane labels red. It also outlines the ticker frame, rings the tracked object on the camera when there is one, and lights the verdict's Finding with a red wash and a red kind label.
+- **An evidence chip** does the reverse. It moves the strip, the frame and any cited document to the evidence, and lights every verdict line that cites it.
+- Lit lines use a red wash (`rgba(195, 48, 27, .11)`), never a colored side border. The Fix line rests on Paper 2 so it never reads as lit.
+

@@ -411,7 +411,7 @@ def headline(inv: Investigation, cause: dict) -> str:
     if sym == "drop" and "drop.aggressive_motion" in chain:
         x = m("drop.aggressive_motion")
         extra = f" after speed_scale was raised to {x['speed_scale']}" if "drop.aggressive_motion.config_change" in chain else ""
-        return f"The {tgt} slipped out at {m('drop')['t_slip']:.1f} s when the arm accelerated at {x['peak_accel']:.1f} m/s^2{extra}, past the {x['limit']} m/s^2 carry limit."
+        return f"The {tgt} slipped out at {m('drop')['t_slip']:.1f} s when the arm accelerated at {x['peak_accel']:.1f} m/s²{extra}, past the {x['limit']} m/s² carry limit."
     if sym == "wrong_object" and "wrong_object.perception_confusion" in chain:
         x = m("wrong_object.perception_confusion")
         return f"The arm delivered the {x['close_label'].replace('_', ' ')}, not the {tgt}: perception chose a look-alike by a {x['margin']:.2f} confidence margin."

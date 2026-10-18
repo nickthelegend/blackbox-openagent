@@ -486,12 +486,12 @@ def _aggressive(c: Ctx) -> Result:
     amps = float(np.median(c.gcur[c.i(tg) + 2:c.i(ts)])) if c.i(ts) > c.i(tg) + 2 else float(c.gcur[c.i(ts)])
     lbl, m_kg, mu = _held_props(c)
     a_star = 2 * mu * c.grip_force(amps) / m_kg - 9.81
-    ev = [c.ev("telemetry", "tcp.accel", ts - 0.5, ts, f"peak {peak:.1f} m/s^2 at {c.t[kk]:.2f} s", "fingertip acceleration before the slip"),
-          c.ev("config", "config.max_carry_accel", None, None, f"max_carry_accel {lim} m/s^2, speed_scale {c.log.config.get('speed_scale')}", "controller settings")]
+    ev = [c.ev("telemetry", "tcp.accel", ts - 0.5, ts, f"peak {peak:.1f} m/s² at {c.t[kk]:.2f} s", "fingertip acceleration before the slip"),
+          c.ev("config", "config.max_carry_accel", None, None, f"max_carry_accel {lim} m/s², speed_scale {c.log.config.get('speed_scale')}", "controller settings")]
     m = {"peak_accel": round(peak, 2), "limit": lim, "withstand": round(a_star, 2), "speed_scale": c.log.config.get("speed_scale")}
     if peak > lim and peak > 0.85 * a_star:
-        return Result(SUPPORTED, f"The fingertip accelerated at {peak:.1f} m/s^2 just before the slip, above the {lim} m/s^2 carry limit and about what this grip can withstand ({a_star:.1f} m/s^2).", m, ev)
-    return Result(REFUTED, f"Peak acceleration before the slip was {peak:.1f} m/s^2, under the {lim} m/s^2 carry limit.", m, ev)
+        return Result(SUPPORTED, f"The fingertip accelerated at {peak:.1f} m/s² just before the slip, above the {lim} m/s² carry limit and about what this grip can withstand ({a_star:.1f} m/s²).", m, ev)
+    return Result(REFUTED, f"Peak acceleration before the slip was {peak:.1f} m/s², under the {lim} m/s² carry limit.", m, ev)
 
 
 @check("drop.low_grip_force.config_change", "drop.low_grip_force", "A config change lowered the grip.",

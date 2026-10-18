@@ -11,3 +11,5 @@ runs/
 .pytest_cache/
 .impeccable/live/
 .impeccable/review/
+# Loom's local state (event log, attachments, machine config)
+.loom/

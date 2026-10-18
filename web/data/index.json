@@ -44,7 +44,7 @@
    "scenario": "slip_rushed",
    "goal": "Put the water bottle in the tray",
    "outcome": "failure",
-   "headline": "The water bottle slipped out at 6.4 s when the arm accelerated at 4.5 m/s^2 after speed_scale was raised to 2.29, past the 2.5 m/s^2 carry limit.",
+   "headline": "The water bottle slipped out at 6.4 s when the arm accelerated at 4.5 m/s\u00b2 after speed_scale was raised to 2.29, past the 2.5 m/s\u00b2 carry limit.",
    "duration": 11.68,
    "symptom": "drop",
    "root": "drop.aggressive_motion",
@@ -80,7 +80,7 @@
   }
  ],
  "control": "nominal-100",
- "generated": "2026-10-17",
+ "generated": "2026-10-18",
  "simulated": true,
  "eval": {
   "runs": 120,
