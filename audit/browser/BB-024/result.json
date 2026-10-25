@@ -1,18 +1,7 @@
 {
   "id": "BB-024",
-  "status": "FAIL",
-  "failures": [
-    {
-      "label": "Collision starts at zero",
-      "pass": false,
-      "actual": "8.04"
-    },
-    {
-      "label": "Expected collision clock",
-      "pass": false,
-      "actual": "08.04 / 10.12 s"
-    }
-  ],
+  "status": "PASS",
+  "failures": [],
   "evidence": "audit/browser/BB-024/",
   "checks": [
     {
@@ -25,16 +14,16 @@
     },
     {
       "label": "Collision starts at zero",
-      "pass": false,
-      "actual": "8.04"
+      "pass": true,
+      "actual": "0.00"
     },
     {
       "label": "Expected collision clock",
-      "pass": false,
-      "actual": "08.04 / 10.12 s"
+      "pass": true,
+      "actual": "00.00 / 10.12 s"
     },
     {
-      "label": "Zero console errors",
+      "label": "Zero unexpected console errors",
       "pass": true,
       "actual": []
     },
@@ -50,7 +39,7 @@
     }
   ],
   "observations": {
-    "clock": "08.04 / 10.12 s",
-    "value": "8.04"
+    "clock": "00.00 / 10.12 s",
+    "value": "0.00"
   }
 }

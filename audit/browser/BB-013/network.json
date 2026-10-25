@@ -23,14 +23,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/run.json",
+    "url": "http://127.0.0.1:8730/data/nominal-000/explain.json",
     "status": 200,
     "type": "application/json"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/explain.json",
+    "url": "http://127.0.0.1:8730/data/nominal-000/run.json",
     "status": 200,
     "type": "application/json"
   },
@@ -72,13 +72,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0006.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0005.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -93,14 +86,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0009.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0008.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0008.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0009.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -114,14 +107,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0011.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0006.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0012.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0011.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -142,13 +135,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0043.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/stamp-ink.svg",
     "status": 200,
     "type": "image/svg+xml"
@@ -163,7 +149,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0027.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0043.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -177,14 +163,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0051.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0013.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0027.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -198,7 +177,21 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0014.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0051.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0035.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0012.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -206,6 +199,34 @@
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0015.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0013.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0014.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0016.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0020.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -226,14 +247,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0016.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0035.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0021.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -247,14 +261,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0021.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0020.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0024.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -275,13 +282,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0024.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0026.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -296,14 +296,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0030.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0028.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0028.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0030.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -317,14 +317,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0033.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0032.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0032.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0033.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -345,14 +345,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0038.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0036.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0036.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0038.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -366,13 +366,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0040.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0041.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -380,7 +373,21 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0040.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0042.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0045.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -401,7 +408,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0045.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0048.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -415,7 +422,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0048.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0050.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -429,21 +436,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0050.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0052.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0054.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -457,7 +450,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0055.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0054.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -471,7 +464,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0058.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0055.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -485,14 +478,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0061.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0058.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0060.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0061.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -506,6 +499,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0064.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0063.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -513,7 +513,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0064.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0060.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -562,13 +562,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0073.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0072.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -576,7 +569,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0074.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0073.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -584,6 +577,13 @@
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0076.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0074.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -604,14 +604,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0080.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0079.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0079.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0080.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -625,13 +625,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0084.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0082.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -639,7 +632,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0085.jpg",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0084.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -653,6 +646,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/nominal-000/frames/0085.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/nominal-000/frames/0087.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -660,14 +660,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
-    "status": 200,
-    "type": "font/woff2"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
     "status": 200,
     "type": "font/woff2"
   },
@@ -681,7 +674,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
     "status": 200,
     "type": "font/woff2"
   },

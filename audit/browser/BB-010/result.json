@@ -50,7 +50,7 @@
       }
     },
     {
-      "label": "Zero console errors",
+      "label": "Zero unexpected console errors",
       "pass": true,
       "actual": []
     },

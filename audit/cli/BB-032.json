@@ -1,7 +1,7 @@
 {
   "id": "BB-032",
   "command": [
-    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
     "-m",
     "blackbox",
     "simulate",
@@ -9,7 +9,7 @@
     "--seed",
     "0",
     "--out",
-    "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u",
+    "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6",
     "--no-frames"
   ],
   "exit_code": 0,

@@ -44,14 +44,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0037.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0000.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0001.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -65,14 +58,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0003.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0000.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0001.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0003.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -86,14 +79,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0005.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0006.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0006.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0005.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -121,6 +114,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0010.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0011.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -135,7 +135,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0010.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0013.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -149,21 +149,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0013.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0015.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0065.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -177,20 +163,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0055.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0035.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0045.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -198,7 +170,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0085.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0025.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0055.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -212,6 +191,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0065.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0095.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -219,7 +205,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0025.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0085.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0035.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -268,13 +261,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0022.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0023.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -282,21 +268,14 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0022.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0024.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0027.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0026.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -317,7 +296,28 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0026.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0027.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0030.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0032.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -338,13 +338,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0032.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0034.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -359,14 +352,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0038.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0037.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0039.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0038.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -380,6 +373,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0042.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0041.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -387,7 +387,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0042.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0039.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -436,13 +436,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0050.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0051.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -451,6 +444,13 @@
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0052.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0050.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -478,13 +478,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0057.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0058.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -492,7 +485,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0060.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0057.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -513,14 +506,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0061.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0060.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0064.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0061.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -534,14 +527,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0066.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0064.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0067.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0066.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -555,7 +548,21 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0067.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0069.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0071.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -583,7 +590,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0071.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0076.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -597,7 +604,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0076.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0078.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -611,21 +618,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0078.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0079.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0081.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -639,14 +632,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0082.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0086.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0081.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -660,7 +646,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0087.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0086.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -674,14 +660,21 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0088.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0082.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0089.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0087.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0088.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -695,13 +688,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0091.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0092.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -709,14 +695,28 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0091.jpg",
     "status": 200,
-    "type": "font/woff2"
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0089.jpg",
+    "status": 200,
+    "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0093.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0094.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -731,13 +731,6 @@
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0097.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0094.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -786,13 +779,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0104.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0106.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -800,7 +786,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0107.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0104.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -821,16 +807,9 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0110.jpg",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0107.jpg",
     "status": 200,
     "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
-    "status": 200,
-    "type": "font/woff2"
   },
   {
     "event": "response",
@@ -842,7 +821,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
     "status": 200,
     "type": "font/woff2"
   },
@@ -856,7 +835,28 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0110.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
     "status": 200,
     "type": "font/woff2"
   },
@@ -866,12 +866,5 @@
     "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
     "status": 200,
     "type": "font/woff2"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/favicon.ico",
-    "status": 404,
-    "source": "Browser console resource URL corroborated by audit/server.stderr.txt"
   }
 ]

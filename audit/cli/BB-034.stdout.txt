@@ -2,7 +2,7 @@
  "format": "blackbox.explain-summary/1",
  "run": "collision-000",
  "run_sha256": "ce652e144ee53cd1ca2949706e37fe43e48f3ac5e3e7e0ce9de453e7438f78e8",
- "explanation": "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000/explain.json",
+ "explanation": "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json",
  "verdict": {
   "outcome": "failure",
   "headline": "The arm hit the cereal box at 9.2 s: it was on the bench but missing from the planner's scene map.",

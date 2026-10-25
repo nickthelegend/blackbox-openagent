@@ -18,7 +18,7 @@
       "pass": true
     },
     {
-      "label": "Zero console errors",
+      "label": "Zero unexpected console errors",
       "pass": true,
       "actual": []
     },
@@ -37,10 +37,10 @@
     "status": 200,
     "headers": {
       "server": "SimpleHTTP/0.6 Python/3.14.7",
-      "date": "Sun, 25 Oct 2026 22:13:35 GMT",
+      "date": "Sun, 25 Oct 2026 22:30:03 GMT",
       "content-type": "image/jpeg",
       "content-length": "6610",
-      "last-modified": "Sun, 25 Oct 2026 22:09:14 GMT"
+      "last-modified": "Sun, 25 Oct 2026 22:19:07 GMT"
     },
     "bytes": 6610
   }

@@ -9,4 +9,4 @@ The arm hit the cereal box at 9.2 s: it was on the bench but missing from the pl
   [ruled_out] The planner knew the object but planned too low. Refuted: the cereal box is not in the planner's scene map, so planning height could not account for it.  (E13, E14, E15)
   [ruled_out] It was a sensor glitch, not a real contact. Refuted: the base motor current rose 8.4x (to 1.55 A) with the error: the motor was pushing against something real.  (E18, E19)
   [fix] Re-capture the planner's scene map whenever the bench changes, or plan carry height from the live camera tracks, not the saved map.  (E13, E14, E15)
-/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000/explain.json
+/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json

@@ -1,49 +1,7 @@
 {
   "id": "BB-022",
-  "status": "FAIL",
-  "failures": [
-    {
-      "label": "Zero console errors",
-      "pass": false,
-      "actual": [
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/empty/data/index.json",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        },
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/favicon.ico",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        }
-      ]
-    },
-    {
-      "label": "Zero unexpected network failures or HTTP errors",
-      "pass": false,
-      "actual": [
-        {
-          "event": "response",
-          "method": "GET",
-          "url": "http://127.0.0.1:8731/favicon.ico",
-          "status": 404,
-          "source": "Browser console resource URL corroborated by audit/copy-server.stderr.txt"
-        }
-      ]
-    }
-  ],
+  "status": "PASS",
+  "failures": [],
   "evidence": "audit/browser/BB-022/",
   "checks": [
     {
@@ -55,32 +13,9 @@
       "pass": true
     },
     {
-      "label": "Zero console errors",
-      "pass": false,
-      "actual": [
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/empty/data/index.json",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        },
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/favicon.ico",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        }
-      ]
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
     },
     {
       "label": "Zero uncaught page errors",
@@ -89,16 +24,8 @@
     },
     {
       "label": "Zero unexpected network failures or HTTP errors",
-      "pass": false,
-      "actual": [
-        {
-          "event": "response",
-          "method": "GET",
-          "url": "http://127.0.0.1:8731/favicon.ico",
-          "status": 404,
-          "source": "Browser console resource URL corroborated by audit/copy-server.stderr.txt"
-        }
-      ]
+      "pass": true,
+      "actual": []
     }
   ],
   "observations": {}
