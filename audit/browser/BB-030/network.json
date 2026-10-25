@@ -1,0 +1,11 @@
+[
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/slip_grip-000/frames/0000.jpg",
+    "status": 200,
+    "type": "image/jpeg",
+    "bytes": 6610,
+    "source": "Chrome browser context APIRequestContext"
+  }
+]

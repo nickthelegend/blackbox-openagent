@@ -1,0 +1,32 @@
+BB-001 FAIL Zero console errors; Zero unexpected network failures or HTTP errors
+BB-002 PASS
+BB-003 PASS
+BB-004 PASS
+BB-005 PASS
+BB-006 PASS
+BB-007 PASS
+BB-008 PASS
+BB-009 PASS
+BB-010 PASS
+BB-011 PASS
+BB-012 PASS
+BB-013 PASS
+BB-014 PASS
+BB-015 PASS
+BB-016 PASS
+BB-017 PASS
+BB-018 PASS
+BB-019 PASS
+BB-020 PASS
+BB-021 PASS
+BB-022 FAIL Zero console errors; Zero unexpected network failures or HTTP errors
+BB-023 FAIL Zero console errors
+BB-024 FAIL Collision starts at zero; Expected collision clock
+BB-025 PASS
+BB-026 PASS
+BB-027 PASS
+BB-028 PASS
+BB-029 PASS
+BB-030 PASS
+BB-031 PASS
+BROWSER COMPLETE: single full-plan run; evidence review in result.json

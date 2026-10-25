@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "FAIL": 4,
+    "PASS": 36,
+    "UNTESTED": 1
+  },
+  "FAIL_ids": [
+    "BB-001",
+    "BB-022",
+    "BB-023",
+    "BB-024"
+  ],
+  "product_code_changed": false,
+  "live_llm_called": false,
+  "test_data": "existing clearly labeled simulated recordings; no request routes mocked or stubbed",
+  "heavy_slot_released": true,
+  "server_pids": [
+    95452,
+    95458
+  ],
+  "owned_servers_stopped": true,
+  "evidence_bytes": 4623824,
+  "largest_screenshot_bytes": 144662
+}

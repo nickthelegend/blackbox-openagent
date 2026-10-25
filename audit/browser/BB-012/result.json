@@ -1,0 +1,192 @@
+{
+  "id": "BB-012",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-012/",
+  "checks": [
+    {
+      "label": "button exact failure time",
+      "pass": true
+    },
+    {
+      "label": "Bracket E8 wraps gripper",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "Bracket E9 wraps gripper_current",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "Bracket E10 wraps height",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "button finding lit",
+      "pass": true
+    },
+    {
+      "label": "button announcement",
+      "pass": true
+    },
+    {
+      "label": "F exact failure time",
+      "pass": true
+    },
+    {
+      "label": "Bracket E8 wraps gripper",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "Bracket E9 wraps gripper_current",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "Bracket E10 wraps height",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        },
+        {
+          "id": "E9",
+          "left": "calc(39.0909% - 4px)",
+          "top": 325,
+          "height": 47
+        },
+        {
+          "id": "E10",
+          "left": "calc(39.0909% - 4px)",
+          "top": 366,
+          "height": 54
+        }
+      ]
+    },
+    {
+      "label": "F finding lit",
+      "pass": true
+    },
+    {
+      "label": "F announcement",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

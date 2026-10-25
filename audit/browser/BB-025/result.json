@@ -1,0 +1,96 @@
+{
+  "id": "BB-025",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-025/",
+  "checks": [
+    {
+      "label": "No horizontal overflow",
+      "pass": true
+    },
+    {
+      "label": "Hidden wordmark and credit",
+      "pass": true
+    },
+    {
+      "label": "Short lane labels only",
+      "pass": true,
+      "review": "The expected cell requires the short labels to display and long labels to hide. All eleven short labels compute to block because they are flex items; all long labels compute to none. The original harness incorrectly required computed display inline rather than testing visibility."
+    },
+    {
+      "label": "Single stacked column",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "width": 375,
+    "bodyScroll": 375,
+    "rootScroll": 375,
+    "deckOverflow": "clip",
+    "brand": "none",
+    "examiner": "none",
+    "short": [
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block",
+      "block"
+    ],
+    "long": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "deck": {
+      "x": 0,
+      "y": 47.578125,
+      "width": 375,
+      "height": 1880.375,
+      "top": 47.578125,
+      "right": 375,
+      "bottom": 1927.953125,
+      "left": 0
+    },
+    "sheet": {
+      "x": 0,
+      "y": 1927.953125,
+      "width": 375,
+      "height": 2802.875,
+      "top": 1927.953125,
+      "right": 375,
+      "bottom": 4730.828125,
+      "left": 0
+    },
+    "columns": "375px"
+  },
+  "review": "The expected cell requires the short labels to display and long labels to hide. All eleven short labels compute to block because they are flex items; all long labels compute to none. The original harness incorrectly required computed display inline rather than testing visibility."
+}

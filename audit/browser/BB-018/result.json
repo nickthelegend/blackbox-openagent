@@ -1,0 +1,66 @@
+{
+  "id": "BB-018",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-018/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the water bottle in the tray · slip_grip-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The water bottle slipped out at 8.6 s: 2.7 N of grip for a load that needs 4.4 N, after grip_effort was cut to 0.28."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "E13 active",
+      "pass": true
+    },
+    {
+      "label": "Bracket E13 wraps gripper_current",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E13",
+          "left": "calc(34% - 4px)",
+          "top": 325,
+          "height": 47
+        }
+      ]
+    },
+    {
+      "label": "Citing claims lit",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

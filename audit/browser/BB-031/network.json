@@ -1,0 +1,11 @@
+[
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/nonexistent/file.ext",
+    "status": 404,
+    "type": "text/html;charset=utf-8",
+    "bytes": 460,
+    "source": "Chrome browser context APIRequestContext"
+  }
+]

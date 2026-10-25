@@ -1,0 +1,65 @@
+{
+  "id": "BB-026",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-026/",
+  "checks": [
+    {
+      "label": "Reduced motion matches",
+      "pass": true
+    },
+    {
+      "label": "All element durations 0.01ms",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "No stamp entrance classes",
+      "pass": true
+    },
+    {
+      "label": "Sweep is instant",
+      "pass": true,
+      "actual": "8.60"
+    },
+    {
+      "label": "No sweep RAF",
+      "pass": true
+    },
+    {
+      "label": "Scroll uses auto",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "motion": {
+      "raf": 0,
+      "scroll": [
+        {
+          "method": "scrollIntoView",
+          "args": [
+            {
+              "behavior": "auto",
+              "block": "nearest"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

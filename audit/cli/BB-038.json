@@ -1,0 +1,15 @@
+{
+  "id": "BB-038",
+  "command": [
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+    "-m",
+    "blackbox",
+    "simulate",
+    "invalid_scenario"
+  ],
+  "exit_code": 2,
+  "status": "PASS",
+  "reason": "",
+  "stdout": "audit/cli/BB-038.stdout.txt",
+  "stderr": "audit/cli/BB-038.stderr.txt"
+}

@@ -1,0 +1,90 @@
+{
+ "runs": [
+  {
+   "id": "slip_grip-000",
+   "scenario": "slip_grip",
+   "goal": "Put the water bottle in the tray",
+   "outcome": "failure",
+   "headline": "The water bottle slipped out at 8.6 s: 2.7 N of grip for a load that needs 4.4 N, after grip_effort was cut to 0.28.",
+   "duration": 22.0,
+   "symptom": "drop",
+   "root": "drop.low_grip_force",
+   "tested": 10,
+   "killed": 7,
+   "frames": 111
+  },
+  {
+   "id": "collision-000",
+   "scenario": "collision",
+   "goal": "Put the pill bottle in the tray",
+   "outcome": "failure",
+   "headline": "The arm hit the cereal box at 9.2 s: it was on the bench but missing from the planner's scene map.",
+   "duration": 10.12,
+   "symptom": "collision",
+   "root": "collision.unmodeled_obstacle",
+   "tested": 9,
+   "killed": 7,
+   "frames": 51
+  },
+  {
+   "id": "wrong_object-000",
+   "scenario": "wrong_object",
+   "goal": "Put the pill bottle in the tray",
+   "outcome": "failure",
+   "headline": "The arm delivered the vitamin bottle, not the pill bottle: perception chose a look-alike by a 0.07 confidence margin.",
+   "duration": 16.72,
+   "symptom": "wrong_object",
+   "root": "wrong_object.perception_confusion",
+   "tested": 9,
+   "killed": 7,
+   "frames": 84
+  },
+  {
+   "id": "slip_rushed-000",
+   "scenario": "slip_rushed",
+   "goal": "Put the water bottle in the tray",
+   "outcome": "failure",
+   "headline": "The water bottle slipped out at 6.4 s when the arm accelerated at 4.5 m/s\u00b2 after speed_scale was raised to 2.29, past the 2.5 m/s\u00b2 carry limit.",
+   "duration": 11.68,
+   "symptom": "drop",
+   "root": "drop.aggressive_motion",
+   "tested": 9,
+   "killed": 6,
+   "frames": 59
+  },
+  {
+   "id": "timeout-000",
+   "scenario": "timeout",
+   "goal": "Put the pill bottle in the tray",
+   "outcome": "failure",
+   "headline": "The run timed out: the pill bottle sat 29 cm out, beyond the arm's 25 cm reach, so 4 grasps closed on air.",
+   "duration": 18.8,
+   "symptom": "timeout",
+   "root": "timeout.unreachable",
+   "tested": 10,
+   "killed": 6,
+   "frames": 95
+  },
+  {
+   "id": "nominal-000",
+   "scenario": "nominal",
+   "goal": "Put the pill bottle in the tray",
+   "outcome": "success",
+   "headline": "Run succeeded: the pill bottle is in the tray at the end of the run. 5 failure hypotheses were tested and none fired.",
+   "duration": 17.48,
+   "symptom": null,
+   "root": null,
+   "tested": 6,
+   "killed": 5,
+   "frames": 88
+  }
+ ],
+ "control": "nominal-100",
+ "generated": "2026-10-18",
+ "simulated": true,
+ "eval": {
+  "runs": 120,
+  "correct": 120,
+  "accuracy": 1.0
+ }
+}

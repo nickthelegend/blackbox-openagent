@@ -1,0 +1,47 @@
+{
+  "id": "BB-030",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-030/",
+  "checks": [
+    {
+      "label": "Exact status",
+      "pass": true,
+      "actual": 200
+    },
+    {
+      "label": "JPEG content type",
+      "pass": true
+    },
+    {
+      "label": "JPEG binary signature",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "status": 200,
+    "headers": {
+      "server": "SimpleHTTP/0.6 Python/3.14.7",
+      "date": "Sun, 25 Oct 2026 22:13:35 GMT",
+      "content-type": "image/jpeg",
+      "content-length": "6610",
+      "last-modified": "Sun, 25 Oct 2026 22:09:14 GMT"
+    },
+    "bytes": 6610
+  }
+}

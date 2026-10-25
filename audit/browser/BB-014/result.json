@@ -1,0 +1,56 @@
+{
+  "id": "BB-014",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-014/",
+  "checks": [
+    {
+      "label": "Every E8 chip active",
+      "pass": true
+    },
+    {
+      "label": "Bracket E8 wraps gripper",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E8",
+          "left": "calc(39.0909% - 4px)",
+          "top": 284,
+          "height": 47
+        }
+      ]
+    },
+    {
+      "label": "Bracket time position",
+      "pass": true
+    },
+    {
+      "label": "Film marked",
+      "pass": true
+    },
+    {
+      "label": "Citing claims lit",
+      "pass": true
+    },
+    {
+      "label": "Evidence hash",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

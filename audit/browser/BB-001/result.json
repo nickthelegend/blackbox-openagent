@@ -1,0 +1,101 @@
+{
+  "id": "BB-001",
+  "status": "FAIL",
+  "failures": [
+    {
+      "label": "Zero console errors",
+      "pass": false,
+      "actual": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+          "location": {
+            "url": "http://127.0.0.1:8730/favicon.ico",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": false,
+      "actual": [
+        {
+          "event": "response",
+          "method": "GET",
+          "url": "http://127.0.0.1:8730/favicon.ico",
+          "status": 404,
+          "source": "Browser console resource URL corroborated by audit/server.stderr.txt"
+        }
+      ]
+    }
+  ],
+  "evidence": "audit/browser/BB-001/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the water bottle in the tray \u00b7 slip_grip-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The water bottle slipped out at 8.6 s: 2.7 N of grip for a load that needs 4.4 N, after grip_effort was cut to 0.28."
+    },
+    {
+      "label": "Visible SIMULATED badge",
+      "pass": true
+    },
+    {
+      "label": "Offline examiner",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": false,
+      "actual": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+          "location": {
+            "url": "http://127.0.0.1:8730/favicon.ico",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": false,
+      "actual": [
+        {
+          "event": "response",
+          "method": "GET",
+          "url": "http://127.0.0.1:8730/favicon.ico",
+          "status": 404,
+          "source": "Browser console resource URL corroborated by audit/server.stderr.txt"
+        }
+      ]
+    }
+  ],
+  "observations": {}
+}
