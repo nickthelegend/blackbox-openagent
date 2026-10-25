@@ -51,6 +51,7 @@ def test_explain_json_round_trips(tmp_path, capsys, scenario, seed):
 
     x = json.loads((run / "explain.json").read_text())
     assert j == json.loads(json.dumps(cli.explain_summary(x, run / "explain.json")))
+    assert j["evidence"] == x["evidence"]
     assert j["verdict"]["outcome"] == "failure" and j["verdict"]["root"] == x["cause"]["root"]
     assert {h["id"] for h in j["kept"]} == {n["id"] for n in x["hypotheses"] if n["status"] == "kept"}
     assert {h["id"] for h in j["refuted"]} == {n["id"] for n in x["hypotheses"] if n["status"] == "killed"}
@@ -60,3 +61,21 @@ def test_explain_json_round_trips(tmp_path, capsys, scenario, seed):
         assert set(h["evidence"]) <= ids
     for c in j["verdict"]["claims"]:
         assert set(c["cites"]) <= ids
+
+
+def test_explain_json_nominal_success(tmp_path, capsys):
+    cli.main(["simulate", "nominal", "--out", str(tmp_path), "--no-frames"])
+    run = tmp_path / "nominal-000"
+    capsys.readouterr()
+    cli.main(["explain", str(run), "--backend", "rules", "--json"])
+    j = json.loads(capsys.readouterr().out)
+
+    assert set(j) == JSON_KEYS and set(j["verdict"]) == VERDICT_KEYS
+    assert j["format"] == "blackbox.explain-summary/1"
+    assert j["verdict"]["outcome"] == "success"
+    assert j["verdict"]["root"] is None
+    assert j["verdict"]["failure_moment"] is None
+    assert j["explanation"] == str(run / "explain.json")
+    x = json.loads((run / "explain.json").read_text())
+    assert x["outcome"] == "success"
+    assert j["evidence"] == x["evidence"]
