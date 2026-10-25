@@ -433,7 +433,7 @@ function render() {
 
   buildFilm(); buildLanes(); buildTicks(); buildClaims(); buildTree(); buildDocs(); buildLog();
   bindStrip();
-  setTime(fm ? Math.max(0, fm.t0 - 1.2) : 0, false);
+  setTime(0, false);
   if (fm) drawFailBox(fm);
   drawPencil();
 }

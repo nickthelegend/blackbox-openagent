@@ -1,8 +1,13 @@
 """Contracts for the static recorder UI, without starting a browser or server."""
 
 from html.parser import HTMLParser
+import json
+import re
+import subprocess
 from urllib.parse import unquote_to_bytes
 from xml.etree import ElementTree
+
+import pytest
 
 from blackbox.cli import WEB
 
@@ -32,3 +37,21 @@ def test_favicon_is_a_self_contained_svg():
     assert len(root) > 0
     # The icon needs no resource requests, including when demo data is absent.
     assert all("href" not in attr for el in root.iter() for attr in el.attrib)
+
+
+@pytest.mark.parametrize("run", sorted((WEB / "data").glob("*/explain.json")), ids=lambda p: p.parent.name)
+def test_reel_initial_timestamp(run):
+    # Evaluate the timestamp expression actually used by render(), with each
+    # saved explanation. No browser, server, or substitute run data is needed.
+    script = (WEB / "index.html").read_text().split("<script>", 1)[1].split("</script>", 1)[0]
+    render = script.split("function render() {", 1)[1].split("function drawPencil()", 1)[0]
+    initial = re.search(r"setTime\((.+), false\);", render).group(1)
+    explanation = json.loads(run.read_text())
+    result = subprocess.run(
+        ["node", "-e", """
+const [expression, fm] = JSON.parse(process.argv[1]);
+process.stdout.write(JSON.stringify(eval(expression)));
+""", json.dumps([initial, explanation["failure_moment"]])],
+        capture_output=True, text=True, check=True,
+    )
+    assert json.loads(result.stdout) == 0
