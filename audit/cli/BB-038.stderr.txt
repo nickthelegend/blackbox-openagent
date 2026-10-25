@@ -1,0 +1,3 @@
+usage: blackbox simulate [-h] [--seed SEED] [--out OUT] [--no-frames]
+                         {nominal,slip_grip,slip_rushed,collision,wrong_object,timeout}
+blackbox simulate: error: argument scenario: invalid choice: 'invalid_scenario' (choose from 'nominal', 'slip_grip', 'slip_rushed', 'collision', 'wrong_object', 'timeout')

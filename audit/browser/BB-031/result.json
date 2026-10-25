@@ -1,0 +1,43 @@
+{
+  "id": "BB-031",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-031/",
+  "checks": [
+    {
+      "label": "Exact status",
+      "pass": true,
+      "actual": 404
+    },
+    {
+      "label": "SimpleHTTP error response",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "status": 404,
+    "headers": {
+      "server": "SimpleHTTP/0.6 Python/3.14.7",
+      "date": "Sun, 25 Oct 2026 22:30:04 GMT",
+      "connection": "close",
+      "content-type": "text/html;charset=utf-8",
+      "content-length": "460"
+    },
+    "bytes": 460
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "BB-017",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-017/",
+  "checks": [
+    {
+      "label": "Disclosure opened",
+      "pass": true
+    },
+    {
+      "label": "Chevron rotated 90 degrees",
+      "pass": true
+    },
+    {
+      "label": "Every expected step visible",
+      "pass": true
+    },
+    {
+      "label": "Log displayed",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "steps": [
+      "observe",
+      "test",
+      "propose",
+      "test",
+      "test",
+      "test",
+      "test",
+      "test",
+      "refine",
+      "propose",
+      "test",
+      "test",
+      "refine",
+      "propose",
+      "test",
+      "test",
+      "refine",
+      "control",
+      "control",
+      "control",
+      "done"
+    ]
+  }
+}

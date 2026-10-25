@@ -1,0 +1,46 @@
+{
+  "id": "BB-004",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-004/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · wrong_object-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The arm delivered the vitamin bottle, not the pill bottle: perception chose a look-alike by a 0.07 confidence margin."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

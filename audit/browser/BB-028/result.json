@@ -1,0 +1,47 @@
+{
+  "id": "BB-028",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-028/",
+  "checks": [
+    {
+      "label": "Exact status",
+      "pass": true,
+      "actual": 200
+    },
+    {
+      "label": "HTML content type",
+      "pass": true
+    },
+    {
+      "label": "Exact title and brand",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "status": 200,
+    "headers": {
+      "server": "SimpleHTTP/0.6 Python/3.14.7",
+      "date": "Sun, 25 Oct 2026 22:30:03 GMT",
+      "content-type": "text/html",
+      "content-length": "57206",
+      "last-modified": "Sun, 25 Oct 2026 22:19:07 GMT"
+    },
+    "bytes": 57206
+  }
+}

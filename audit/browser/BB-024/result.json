@@ -1,0 +1,45 @@
+{
+  "id": "BB-024",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-024/",
+  "checks": [
+    {
+      "label": "Playback started",
+      "pass": true
+    },
+    {
+      "label": "Playback stopped",
+      "pass": true
+    },
+    {
+      "label": "Collision starts at zero",
+      "pass": true,
+      "actual": "0.00"
+    },
+    {
+      "label": "Expected collision clock",
+      "pass": true,
+      "actual": "00.00 / 10.12 s"
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "clock": "00.00 / 10.12 s",
+    "value": "0.00"
+  }
+}

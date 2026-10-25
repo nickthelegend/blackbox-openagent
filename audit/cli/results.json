@@ -1,0 +1,151 @@
+[
+  {
+    "id": "BB-032",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "simulate",
+      "collision",
+      "--seed",
+      "0",
+      "--out",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6",
+      "--no-frames"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-032.stdout.txt",
+    "stderr": "audit/cli/BB-032.stderr.txt"
+  },
+  {
+    "id": "BB-033",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "explain",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000",
+      "--backend",
+      "rules"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-033.stdout.txt",
+    "stderr": "audit/cli/BB-033.stderr.txt"
+  },
+  {
+    "id": "BB-034",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "explain",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000",
+      "--json"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-034.stdout.txt",
+    "stderr": "audit/cli/BB-034.stderr.txt"
+  },
+  {
+    "id": "BB-035",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "verify",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-035.stdout.txt",
+    "stderr": "audit/cli/BB-035.stderr.txt"
+  },
+  {
+    "id": "BB-036",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "verify",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json"
+    ],
+    "exit_code": 1,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-036.stdout.txt",
+    "stderr": "audit/cli/BB-036.stderr.txt"
+  },
+  {
+    "id": "BB-037",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "eval",
+      "--seeds",
+      "1"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-037.stdout.txt",
+    "stderr": "audit/cli/BB-037.stderr.txt"
+  },
+  {
+    "id": "BB-038",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "simulate",
+      "invalid_scenario"
+    ],
+    "exit_code": 2,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-038.stdout.txt",
+    "stderr": "audit/cli/BB-038.stderr.txt"
+  },
+  {
+    "id": "BB-039",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "blackbox",
+      "explain",
+      "nonexistent_dir"
+    ],
+    "exit_code": 1,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-039.stdout.txt",
+    "stderr": "audit/cli/BB-039.stderr.txt"
+  },
+  {
+    "id": "BB-040",
+    "status": "UNTESTED",
+    "reason": "needs BLACKBOX_LLM_API_KEY or NVIDIA_API_KEY"
+  },
+  {
+    "id": "BB-041",
+    "command": [
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_llm.py::test_llm_unreachable_falls_back_to_rules"
+    ],
+    "exit_code": 0,
+    "status": "PASS",
+    "reason": "",
+    "stdout": "audit/cli/BB-041.stdout.txt",
+    "stderr": "audit/cli/BB-041.stderr.txt"
+  }
+]

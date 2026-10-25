@@ -1,0 +1,15 @@
+{
+  "id": "BB-039",
+  "command": [
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+    "-m",
+    "blackbox",
+    "explain",
+    "nonexistent_dir"
+  ],
+  "exit_code": 1,
+  "status": "PASS",
+  "reason": "",
+  "stdout": "audit/cli/BB-039.stdout.txt",
+  "stderr": "audit/cli/BB-039.stderr.txt"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "BB-010",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-010/",
+  "checks": [
+    {
+      "label": "ArrowRight updates clock, playhead and value",
+      "pass": true,
+      "actual": {
+        "time": "0.10",
+        "left": "0.454545%",
+        "clock": "00.10 / 22.00 s"
+      }
+    },
+    {
+      "label": "Shift+ArrowRight updates clock, playhead and value",
+      "pass": true,
+      "actual": {
+        "time": "1.10",
+        "left": "5%",
+        "clock": "01.10 / 22.00 s"
+      }
+    },
+    {
+      "label": "ArrowLeft updates clock, playhead and value",
+      "pass": true,
+      "actual": {
+        "time": "1.00",
+        "left": "4.54545%",
+        "clock": "01.00 / 22.00 s"
+      }
+    },
+    {
+      "label": "Home updates clock, playhead and value",
+      "pass": true,
+      "actual": {
+        "time": "0.00",
+        "left": "0%",
+        "clock": "00.00 / 22.00 s"
+      }
+    },
+    {
+      "label": "End updates clock, playhead and value",
+      "pass": true,
+      "actual": {
+        "time": "22.00",
+        "left": "100%",
+        "clock": "22.00 / 22.00 s"
+      }
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "steps": [
+      {
+        "key": "ArrowRight",
+        "time": "0.10",
+        "left": "0.454545%",
+        "clock": "00.10 / 22.00 s"
+      },
+      {
+        "key": "Shift+ArrowRight",
+        "time": "1.10",
+        "left": "5%",
+        "clock": "01.10 / 22.00 s"
+      },
+      {
+        "key": "ArrowLeft",
+        "time": "1.00",
+        "left": "4.54545%",
+        "clock": "01.00 / 22.00 s"
+      },
+      {
+        "key": "Home",
+        "time": "0.00",
+        "left": "0%",
+        "clock": "00.00 / 22.00 s"
+      },
+      {
+        "key": "End",
+        "time": "22.00",
+        "left": "100%",
+        "clock": "22.00 / 22.00 s"
+      }
+    ]
+  }
+}

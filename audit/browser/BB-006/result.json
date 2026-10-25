@@ -1,0 +1,46 @@
+{
+  "id": "BB-006",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-006/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · timeout-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The run timed out: the pill bottle sat 29 cm out, beyond the arm's 25 cm reach, so 4 grasps closed on air."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

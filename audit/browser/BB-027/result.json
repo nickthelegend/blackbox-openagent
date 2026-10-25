@@ -1,0 +1,165 @@
+{
+  "id": "BB-027",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-027/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the water bottle in the tray · slip_grip-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The water bottle slipped out at 8.6 s: 2.7 N of grip for a load that needs 4.4 N, after grip_effort was cut to 0.28."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · collision-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The arm hit the cereal box at 9.2 s: it was on the bench but missing from the planner's scene map."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · wrong_object-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The arm delivered the vitamin bottle, not the pill bottle: perception chose a look-alike by a 0.07 confidence margin."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the water bottle in the tray · slip_rushed-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The water bottle slipped out at 6.4 s when the arm accelerated at 4.5 m/s² after speed_scale was raised to 2.29, past the 2.5 m/s² carry limit."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · timeout-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The run timed out: the pill bottle sat 29 cm out, beyond the arm's 25 cm reach, so 4 grasps closed on air."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · nominal-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "Run succeeded: the pill bottle is in the tray at the end of the run. 5 failure hypotheses were tested and none fired."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "loaded": [
+      "slip_grip-000",
+      "collision-000",
+      "wrong_object-000",
+      "slip_rushed-000",
+      "timeout-000",
+      "nominal-000"
+    ]
+  }
+}

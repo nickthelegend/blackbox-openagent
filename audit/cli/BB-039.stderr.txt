@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/blackbox/runlog.py", line 137, in load
+    data = json.loads(p.read_text())
+                      ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'nonexistent_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/blackbox/__main__.py", line 3, in <module>
+    main()
+    ~~~~^^
+  File "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/blackbox/cli.py", line 199, in main
+    a.fn(a)
+    ~~~~^^^
+  File "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/blackbox/cli.py", line 80, in cmd_explain
+    log = RunLog.load(a.run)
+  File "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/blackbox/runlog.py", line 139, in load
+    raise LogError(f"cannot read {p}: {e}") from e
+blackbox.runlog.LogError: cannot read nonexistent_dir: [Errno 2] No such file or directory: 'nonexistent_dir'

@@ -1,0 +1,46 @@
+{
+  "id": "BB-008",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-008/",
+  "checks": [
+    {
+      "label": "Pause label and icon",
+      "pass": true
+    },
+    {
+      "label": "Clock advances",
+      "pass": true,
+      "actual": {
+        "a": "0.00",
+        "b": "0.35"
+      }
+    },
+    {
+      "label": "Clock stops",
+      "pass": true
+    },
+    {
+      "label": "Play label and icon",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "clock": "00.38 / 22.00 s"
+  }
+}

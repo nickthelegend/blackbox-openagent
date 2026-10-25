@@ -1,0 +1,12 @@
+The arm hit the cereal box at 9.2 s: it was on the bench but missing from the planner's scene map.
+  [outcome] The tray holds nothing; the pill bottle is not in it.  (E1, E2, E3, E4)
+  [finding] At 9.24 s, during 'carrying it to the tray', the base stopped dead while its command kept moving: tracking error rose to 6.3 deg and its motor current climbed to 1.55 A.  (E6, E7, E8)
+  [cause] At 9.24 s the arm was touching the cereal box (19 cm tall); the planner's scene map does not list it, so the carry height of 14 cm was planned without it. The workcell log says: "Cereal box added to the bench for the pantry demo. Planner scene map not re-captured."  (E13, E14, E15, E16, E17)
+  [ruled_out] The run ran out of time. Refuted: the run ended at 10.12 s, inside its 25 s deadline.  (E5)
+  [ruled_out] The object slipped out of the gripper. Refuted: the gripper held the object at 35.0 deg from 6.12 s until it was told to open at 10.12 s.  (E9, E10)
+  [ruled_out] The arm moved a different object than the goal named. Refuted: the grasped object is the pill bottle (0.95), the goal's target.  (E11, E12)
+  [ruled_out] The gripper closed on nothing. Refuted: every grasp stopped on an object.  (E9)
+  [ruled_out] The planner knew the object but planned too low. Refuted: the cereal box is not in the planner's scene map, so planning height could not account for it.  (E13, E14, E15)
+  [ruled_out] It was a sensor glitch, not a real contact. Refuted: the base motor current rose 8.4x (to 1.55 A) with the error: the motor was pushing against something real.  (E18, E19)
+  [fix] Re-capture the planner's scene map whenever the bench changes, or plan carry height from the live camera tracks, not the saved map.  (E13, E14, E15)
+/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json

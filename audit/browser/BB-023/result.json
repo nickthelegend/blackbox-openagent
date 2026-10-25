@@ -1,0 +1,32 @@
+{
+  "id": "BB-023",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-023/",
+  "checks": [
+    {
+      "label": "Exact error title",
+      "pass": true
+    },
+    {
+      "label": "Error instructions",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

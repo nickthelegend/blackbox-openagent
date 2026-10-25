@@ -1,0 +1,15 @@
+{
+  "id": "BB-041",
+  "command": [
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_llm.py::test_llm_unreachable_falls_back_to_rules"
+  ],
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "stdout": "audit/cli/BB-041.stdout.txt",
+  "stderr": "audit/cli/BB-041.stderr.txt"
+}

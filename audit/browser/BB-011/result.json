@@ -1,0 +1,36 @@
+{
+  "id": "BB-011",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-011/",
+  "checks": [
+    {
+      "label": "Space starts playback",
+      "pass": true
+    },
+    {
+      "label": "Playback advances",
+      "pass": true
+    },
+    {
+      "label": "Space pauses playback",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

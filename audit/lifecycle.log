@@ -1,0 +1,3 @@
+/tmp/grokbot-heavy-slots/slot1
+main PID=63391 port=8730; copy PID=63397 port=8731
+cleanup complete: owned servers stopped; heavy slot released

@@ -1,0 +1,41 @@
+{
+  "id": "BB-009",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-009/",
+  "checks": [
+    {
+      "label": "Paused at zero",
+      "pass": true
+    },
+    {
+      "label": "Exact clock",
+      "pass": true,
+      "actual": "00.00 / 22.00 s"
+    },
+    {
+      "label": "Playhead zero",
+      "pass": true
+    },
+    {
+      "label": "Initial camera frame",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

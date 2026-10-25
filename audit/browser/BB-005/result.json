@@ -1,0 +1,46 @@
+{
+  "id": "BB-005",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-005/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the water bottle in the tray · slip_rushed-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The water bottle slipped out at 6.4 s when the arm accelerated at 4.5 m/s² after speed_scale was raised to 2.29, past the 2.5 m/s² carry limit."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

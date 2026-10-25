@@ -1,0 +1,2 @@
+MISMATCH: 9 checks re-run against collision-000 (ce652e144ee5)
+  - log hash differs from the one the explanation was made from

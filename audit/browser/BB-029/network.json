@@ -1,0 +1,11 @@
+[
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/index.json",
+    "status": 200,
+    "type": "application/json",
+    "bytes": 2566,
+    "source": "Chrome browser context APIRequestContext"
+  }
+]

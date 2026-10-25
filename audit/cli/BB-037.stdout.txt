@@ -1,0 +1,7 @@
+6/6 runs explained correctly (100.0%) in 0.2 s
+  collision -> collision.unmodeled_obstacle: 1
+  nominal -> None: 1
+  slip_grip -> drop.low_grip_force: 1
+  slip_rushed -> drop.aggressive_motion: 1
+  timeout -> timeout.unreachable: 1
+  wrong_object -> wrong_object.perception_confusion: 1
