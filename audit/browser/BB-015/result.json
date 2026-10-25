@@ -1,0 +1,63 @@
+{
+  "id": "BB-015",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-015/",
+  "checks": [
+    {
+      "label": "Every E19 chip active",
+      "pass": true
+    },
+    {
+      "label": "Document active",
+      "pass": true
+    },
+    {
+      "label": "Document scrolled into view",
+      "pass": true,
+      "review": "The complete E19 document text is visible in screen.jpg. Native nearest scrolling places its outer border at y=800.078125 CSS px, which rounds to physical pixel 800. The original harness incorrectly required the fractional border edge to be <=800 without pixel rounding."
+    },
+    {
+      "label": "Citing claims lit",
+      "pass": true
+    },
+    {
+      "label": "Evidence hash",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "before": {
+      "x": 20,
+      "y": 1109.078125,
+      "width": 249.65625,
+      "height": 93
+    },
+    "after": {
+      "x": 20,
+      "y": 707.078125,
+      "width": 249.65625,
+      "height": 93
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "review": "The complete E19 document text is visible in screen.jpg. Native nearest scrolling places its outer border at y=800.078125 CSS px, which rounds to physical pixel 800. The original harness incorrectly required the fractional border edge to be <=800 without pixel rounding."
+}

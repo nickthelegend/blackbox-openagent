@@ -1,0 +1,36 @@
+{
+  "id": "BB-013",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-013/",
+  "checks": [
+    {
+      "label": "No jump control",
+      "pass": true
+    },
+    {
+      "label": "No brackets",
+      "pass": true
+    },
+    {
+      "label": "Announcement unchanged",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {}
+}

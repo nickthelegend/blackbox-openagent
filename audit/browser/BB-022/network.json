@@ -1,0 +1,58 @@
+[
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8731/empty/",
+    "status": 200,
+    "type": "text/html"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+    "status": 200,
+    "type": "text/css; charset=utf-8"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8731/empty/data/index.json",
+    "status": 404,
+    "type": "text/html;charset=utf-8"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8731/favicon.ico",
+    "status": 404,
+    "source": "Browser console resource URL corroborated by audit/copy-server.stderr.txt"
+  }
+]

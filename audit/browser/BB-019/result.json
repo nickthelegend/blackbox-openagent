@@ -1,0 +1,92 @@
+{
+  "id": "BB-019",
+  "status": "PASS",
+  "failures": [],
+  "evidence": "audit/browser/BB-019/",
+  "checks": [
+    {
+      "label": "Exact run heading",
+      "pass": true,
+      "actual": "Put the pill bottle in the tray · collision-000"
+    },
+    {
+      "label": "Current reel",
+      "pass": true
+    },
+    {
+      "label": "Goal fact",
+      "pass": true
+    },
+    {
+      "label": "Exact verdict",
+      "pass": true,
+      "actual": "The arm hit the cereal box at 9.2 s: it was on the bench but missing from the planner's scene map."
+    },
+    {
+      "label": "Failure jump control",
+      "pass": true
+    },
+    {
+      "label": "Bracket E6 wraps q.base",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E6",
+          "left": "calc(91.3043% - 4px)",
+          "top": 38,
+          "height": 47
+        },
+        {
+          "id": "E7",
+          "left": "calc(91.3043% - 4px)",
+          "top": 243,
+          "height": 47
+        }
+      ]
+    },
+    {
+      "label": "Bracket E7 wraps current",
+      "pass": true,
+      "actual": [
+        {
+          "id": "E6",
+          "left": "calc(91.3043% - 4px)",
+          "top": 38,
+          "height": 47
+        },
+        {
+          "id": "E7",
+          "left": "calc(91.3043% - 4px)",
+          "top": 243,
+          "height": 47
+        }
+      ]
+    },
+    {
+      "label": "Contact announcement",
+      "pass": true
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "symptomEvidence": [
+      "E6",
+      "E7",
+      "E8"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "BB-024",
+  "status": "FAIL",
+  "failures": [
+    {
+      "label": "Collision starts at zero",
+      "pass": false,
+      "actual": "8.04"
+    },
+    {
+      "label": "Expected collision clock",
+      "pass": false,
+      "actual": "08.04 / 10.12 s"
+    }
+  ],
+  "evidence": "audit/browser/BB-024/",
+  "checks": [
+    {
+      "label": "Playback started",
+      "pass": true
+    },
+    {
+      "label": "Playback stopped",
+      "pass": true
+    },
+    {
+      "label": "Collision starts at zero",
+      "pass": false,
+      "actual": "8.04"
+    },
+    {
+      "label": "Expected collision clock",
+      "pass": false,
+      "actual": "08.04 / 10.12 s"
+    },
+    {
+      "label": "Zero console errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero uncaught page errors",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "label": "Zero unexpected network failures or HTTP errors",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "observations": {
+    "clock": "08.04 / 10.12 s",
+    "value": "8.04"
+  }
+}
