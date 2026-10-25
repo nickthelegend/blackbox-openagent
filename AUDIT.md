@@ -1,5 +1,7 @@
 # BLACKBOX Zero-Tolerance Audit Plan
 
+40 PASS / 0 FAIL / 1 UNTESTED
+
 Final full-plan run executed in Chrome for Testing. All 41 rows verified: 40 PASS, 1 UNTESTED (justified credential requirement).
 Judge command: `.venv/bin/python -m blackbox serve` | URL: http://127.0.0.1:8730. All demo runs are simulated.
 
