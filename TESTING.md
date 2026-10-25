@@ -6,7 +6,7 @@ Counts from the status column of the AUDIT.md table:
 - FAIL: 0
 - UNTESTED: 1
 
-The audit is not done. No FAIL remains. BB-040 is UNTESTED.
+The audit plan is complete: 40 PASS, 0 FAIL, 1 UNTESTED. BB-040 stays UNTESTED because it needs BLACKBOX_LLM_API_KEY or NVIDIA_API_KEY.
 
 ## UNTESTED
 
