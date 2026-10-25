@@ -1,11 +1,11 @@
 {
   "id": "BB-034",
   "command": [
-    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
     "-m",
     "blackbox",
     "explain",
-    "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000",
+    "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000",
     "--json"
   ],
   "exit_code": 0,

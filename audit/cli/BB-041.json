@@ -1,7 +1,7 @@
 {
   "id": "BB-041",
   "command": [
-    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+    "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
     "-m",
     "pytest",
     "-q",

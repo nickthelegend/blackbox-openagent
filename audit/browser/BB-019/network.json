@@ -23,14 +23,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/explain.json",
+    "url": "http://127.0.0.1:8730/data/collision-000/run.json",
     "status": 200,
     "type": "application/json"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/run.json",
+    "url": "http://127.0.0.1:8730/data/collision-000/explain.json",
     "status": 200,
     "type": "application/json"
   },
@@ -40,13 +40,6 @@
     "url": "http://127.0.0.1:8730/stamp-ink.svg",
     "status": 200,
     "type": "image/svg+xml"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0040.jpg",
-    "status": 200,
-    "type": "image/jpeg"
   },
   {
     "event": "response",
@@ -72,14 +65,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0004.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0003.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0003.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0004.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -100,6 +93,13 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0008.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0007.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -107,21 +107,21 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0025.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0029.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0011.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0009.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0048.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -142,7 +142,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0048.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0020.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0029.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -156,28 +163,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0020.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0008.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0009.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0039.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0025.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -205,14 +198,14 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0015.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0014.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0014.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0015.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -233,13 +226,6 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0019.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0021.jpg",
     "status": 200,
     "type": "image/jpeg"
@@ -247,7 +233,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0023.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0019.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -261,7 +247,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0024.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0023.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -275,14 +261,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0027.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0030.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0024.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -296,21 +275,14 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0027.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0031.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0035.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0033.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -324,7 +296,21 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0037.jpg",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0030.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0033.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0035.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -338,7 +324,28 @@
   {
     "event": "response",
     "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0037.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0038.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0040.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0041.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -353,13 +360,6 @@
     "event": "response",
     "method": "GET",
     "url": "http://127.0.0.1:8730/data/collision-000/frames/0042.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0041.jpg",
     "status": 200,
     "type": "image/jpeg"
   },
@@ -394,35 +394,7 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "http://127.0.0.1:8730/data/collision-000/frames/0050.jpg",
-    "status": 200,
-    "type": "image/jpeg"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
-    "status": 200,
-    "type": "font/woff2"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2",
-    "status": 200,
-    "type": "font/woff2"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
-    "status": 200,
-    "type": "font/woff2"
-  },
-  {
-    "event": "response",
-    "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuYMBYro.woff2",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
     "status": 200,
     "type": "font/woff2"
   },
@@ -436,7 +408,35 @@
   {
     "event": "response",
     "method": "GET",
-    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
+    "url": "http://127.0.0.1:8730/data/collision-000/frames/0050.jpg",
+    "status": 200,
+    "type": "image/jpeg"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lwz3bWuYMBYro.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "event": "response",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2",
     "status": 200,
     "type": "font/woff2"
   },

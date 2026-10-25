@@ -12,8 +12,8 @@
       "label": "Clock advances",
       "pass": true,
       "actual": {
-        "a": "7.40",
-        "b": "7.76"
+        "a": "0.00",
+        "b": "0.35"
       }
     },
     {
@@ -25,7 +25,7 @@
       "pass": true
     },
     {
-      "label": "Zero console errors",
+      "label": "Zero unexpected console errors",
       "pass": true,
       "actual": []
     },
@@ -41,6 +41,6 @@
     }
   ],
   "observations": {
-    "clock": "07.79 / 22.00 s"
+    "clock": "00.38 / 22.00 s"
   }
 }

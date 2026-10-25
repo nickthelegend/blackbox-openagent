@@ -1,25 +1,7 @@
 {
   "id": "BB-023",
-  "status": "FAIL",
-  "failures": [
-    {
-      "label": "Zero console errors",
-      "pass": false,
-      "actual": [
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/missing/data/slip_grip-000/run.json",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        }
-      ]
-    }
-  ],
+  "status": "PASS",
+  "failures": [],
   "evidence": "audit/browser/BB-023/",
   "checks": [
     {
@@ -31,21 +13,9 @@
       "pass": true
     },
     {
-      "label": "Zero console errors",
-      "pass": false,
-      "actual": [
-        {
-          "type": "error",
-          "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-          "location": {
-            "url": "http://127.0.0.1:8731/missing/data/slip_grip-000/run.json",
-            "line": 0,
-            "column": 0,
-            "lineNumber": 0,
-            "columnNumber": 0
-          }
-        }
-      ]
+      "label": "Zero unexpected console errors",
+      "pass": true,
+      "actual": []
     },
     {
       "label": "Zero uncaught page errors",

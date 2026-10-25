@@ -2,7 +2,7 @@
   {
     "id": "BB-032",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "simulate",
@@ -10,7 +10,7 @@
       "--seed",
       "0",
       "--out",
-      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6",
       "--no-frames"
     ],
     "exit_code": 0,
@@ -22,11 +22,11 @@
   {
     "id": "BB-033",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "explain",
-      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000",
       "--backend",
       "rules"
     ],
@@ -39,11 +39,11 @@
   {
     "id": "BB-034",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "explain",
-      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000",
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000",
       "--json"
     ],
     "exit_code": 0,
@@ -55,11 +55,11 @@
   {
     "id": "BB-035",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "verify",
-      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000/explain.json"
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json"
     ],
     "exit_code": 0,
     "status": "PASS",
@@ -70,11 +70,11 @@
   {
     "id": "BB-036",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "verify",
-      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-bj0awe_u/collision-000/explain.json"
+      "/var/folders/tp/gcpvr1451r350sq27v4csrq40000gn/T/blackbox-audit-cli-mxevlcu6/collision-000/explain.json"
     ],
     "exit_code": 1,
     "status": "PASS",
@@ -85,7 +85,7 @@
   {
     "id": "BB-037",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "eval",
@@ -101,7 +101,7 @@
   {
     "id": "BB-038",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "simulate",
@@ -116,7 +116,7 @@
   {
     "id": "BB-039",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "blackbox",
       "explain",
@@ -136,7 +136,7 @@
   {
     "id": "BB-041",
     "command": [
-      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t3/.venv/bin/python",
+      "/Volumes/Extreme SSD/Projects/wave1/.loom-worktrees/blackbox-openagent-b4a6b63efa3d/omvodbpcb/t5/.venv/bin/python",
       "-m",
       "pytest",
       "-q",

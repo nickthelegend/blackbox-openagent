@@ -1,12 +1,15 @@
 const {chromium}=require('playwright');
 const {expectedMissingResponse,expectedMissingConsole}=require('./expected-errors.cjs');
 const fs=require('fs'); const path=require('path'); const assert=require('assert/strict');
+const {execSync}=require('child_process');
 const root=process.cwd(), out=path.join(root,'audit/browser'), base=process.argv[2], alt=process.argv[3];
+const onlyFilter = process.argv[4] ? process.argv[4].split(',').map(x=>parseInt(x.trim(),10)) : null;
 const index=JSON.parse(fs.readFileSync('web/data/index.json'));
 const records=Object.fromEntries(index.runs.map(r=>[r.id,{run:JSON.parse(fs.readFileSync(`web/data/${r.id}/run.json`)),ex:JSON.parse(fs.readFileSync(`web/data/${r.id}/explain.json`))}]));
 let browser,results=[];
 const norm=x=>x.replace(/\s+/g,' ').trim();
 async function test(n,fn,options={}){
+ if(onlyFilter && !onlyFilter.includes(n)) return;
  const id=`BB-${String(n).padStart(3,'0')}`, folder=path.join(out,id);fs.mkdirSync(folder,{recursive:true});
  const ctx=await browser.newContext({viewport:{width:1280,height:800},...options}); const page=await ctx.newPage();
  page.setDefaultTimeout(10000);
@@ -57,7 +60,22 @@ async function bracketCheck(page,check,ids){
 }
 (async()=>{
  browser=await chromium.launch({headless:true,channel:'chromium'});
- fs.writeFileSync('audit/environment.json',JSON.stringify({date:new Date().toISOString(),browserVersion:browser.version(),executable:chromium.executablePath(),mainViewport:{width:1280,height:800},mobileViewport:{width:375,height:812},base,alt},null,2));
+ let productRevision='', pyVer='';
+ try{productRevision=execSync('git rev-parse HEAD').toString().trim();}catch(e){}
+ try{pyVer=execSync('.venv/bin/python --version').toString().trim();}catch(e){}
+ fs.writeFileSync('audit/environment.json',JSON.stringify({
+   date:new Date().toISOString(),
+   browserVersion:browser.version(),
+   executable:chromium.executablePath(),
+   mainViewport:{width:1280,height:800},
+   mobileViewport:{width:375,height:812},
+   base,
+   alt,
+   productRevision,
+   python:pyVer,
+   node:process.version,
+   playwright:require('playwright/package.json').version
+ },null,2));
  await test(1,async({page,check,load})=>{await load('');await checkRun(page,check,'slip_grip-000',false);check('Visible SIMULATED badge',await page.locator('.sim').isVisible()&&(await page.locator('.sim').textContent())==='SIMULATED');check('Offline examiner',norm(await page.locator('#examiner').textContent())==='Examined by rules engine · offline');});
  for(const [offset,id] of index.runs.map((r,i)=>[i,r.id]))await test(2+offset,async({page,check,load})=>{await load(`run=${id==='slip_grip-000'?'nominal-000':'slip_grip-000'}`);await page.locator(`button.reel[data-id="${id}"]`).click();await page.waitForFunction(id=>document.querySelector('h1')?.textContent.includes(id),id);await page.waitForLoadState('networkidle');await checkRun(page,check,id);});
  await test(8,async({page,check,load,logs})=>{await load();const a=await time(page);await page.locator('#play').click();check('Pause label and icon',await page.locator('#play').getAttribute('aria-label')==='Pause'&&await page.locator('#play use').getAttribute('href')==='#i-pause');await page.waitForTimeout(350);const b=await time(page);check('Clock advances',+b>+a,{a,b});await page.locator('#play').click();const c=await time(page);await page.waitForTimeout(250);check('Clock stops',await time(page)===c);check('Play label and icon',await page.locator('#play').getAttribute('aria-label')==='Play'&&await page.locator('#play use').getAttribute('href')==='#i-play');logs.observations.clock=await page.locator('#clock').textContent();});
