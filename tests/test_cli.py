@@ -1,5 +1,7 @@
 import json
 
+import pytest
+
 from blackbox import cli
 
 
@@ -30,3 +32,31 @@ def test_verify_command(tmp_path, capsys):
     except SystemExit as e:
         assert e.code == 0
     assert "VERIFIED" in capsys.readouterr().out
+
+
+JSON_KEYS = {"format", "run", "run_sha256", "explanation", "verdict", "kept", "refuted", "evidence"}
+VERDICT_KEYS = {"outcome", "headline", "symptom", "root", "chain", "failure_moment", "claims"}
+
+
+@pytest.mark.parametrize("scenario,seed", [("collision", 3), ("slip_grip", 5)])
+def test_explain_json_round_trips(tmp_path, capsys, scenario, seed):
+    cli.main(["simulate", scenario, "--seed", str(seed), "--out", str(tmp_path), "--no-frames"])
+    run = tmp_path / f"{scenario}-{seed:03d}"
+    capsys.readouterr()
+    cli.main(["explain", str(run), "--backend", "rules", "--json"])
+    j = json.loads(capsys.readouterr().out)
+    assert json.loads(json.dumps(j)) == j
+    assert set(j) == JSON_KEYS and set(j["verdict"]) == VERDICT_KEYS
+    assert j["format"] == cli.JSON_FORMAT and j["run"] == run.name
+
+    x = json.loads((run / "explain.json").read_text())
+    assert j == json.loads(json.dumps(cli.explain_summary(x, run / "explain.json")))
+    assert j["verdict"]["outcome"] == "failure" and j["verdict"]["root"] == x["cause"]["root"]
+    assert {h["id"] for h in j["kept"]} == {n["id"] for n in x["hypotheses"] if n["status"] == "kept"}
+    assert {h["id"] for h in j["refuted"]} == {n["id"] for n in x["hypotheses"] if n["status"] == "killed"}
+    assert j["kept"] and j["refuted"]
+    ids = {e["id"] for e in j["evidence"]}
+    for h in j["kept"] + j["refuted"]:
+        assert set(h["evidence"]) <= ids
+    for c in j["verdict"]["claims"]:
+        assert set(c["cites"]) <= ids

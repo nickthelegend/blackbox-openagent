@@ -38,6 +38,28 @@ observe  -> propose -> test -> refine -> control -> verdict
   .venv/bin/python -m blackbox verify web/data/slip_grip-000/explain.json   # VERIFIED / MISMATCH
   ```
 
+### `explain --json`
+
+`blackbox explain <run> --json` still writes the full `explain.json`, but prints one JSON object (and nothing else) to stdout instead of the text summary, for scripts and CI:
+
+```bash
+.venv/bin/python -m blackbox explain web/data/collision-000 --json | jq .verdict.root
+```
+
+The keys are stable within `format: "blackbox.explain-summary/1"`. New keys may be added; existing ones are not renamed or removed without a format bump.
+
+| Key | Contents |
+|---|---|
+| `format` | `"blackbox.explain-summary/1"` |
+| `run`, `run_sha256` | run id and sha256 of the log that was explained |
+| `explanation` | path of the full `explain.json` written alongside the run |
+| `verdict` | `outcome` (`success` / `failure`), `headline`, `symptom`, `root` (e.g. `collision.unmodeled_obstacle`, `null` on success), `chain` (symptom-to-root hypothesis ids), `failure_moment` (`{t0, t1, label}` or `null`), `claims` (`[{kind, text, cites, hypothesis}]`) |
+| `kept` | hypotheses that survived their test and the negative control: `[{id, statement, summary, evidence, round}]` |
+| `refuted` | hypotheses killed by their test, same shape as `kept` |
+| `evidence` | every evidence span the checks produced (all ids cited in `verdict.claims`, `kept` and `refuted` resolve here): `[{id, source, channel, t0, t1, value, note}]`; `t0`/`t1` are seconds, `null` for documents |
+
+Hypotheses demoted to *open* by the negative control, or inconclusive, appear in neither `kept` nor `refuted`; the full `explain.json` has them.
+
 ### Backends
 
 | | |

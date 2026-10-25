@@ -1,7 +1,7 @@
 """BLACKBOX command line.
 
     python -m blackbox simulate collision --seed 3 --out runs/
-    python -m blackbox explain runs/collision-003 [--control runs/nominal-000] [--backend rules|llm]
+    python -m blackbox explain runs/collision-003 [--control runs/nominal-000] [--backend rules|llm] [--json]
     python -m blackbox verify runs/collision-003/explain.json
     python -m blackbox eval --seeds 20          # accuracy against simulator ground truth (rules backend)
     python -m blackbox demo                     # rebuild web/data: demo runs + explanations for the UI
@@ -50,12 +50,41 @@ def cmd_simulate(a) -> None:
     print(out)
 
 
+JSON_FORMAT = "blackbox.explain-summary/1"
+
+
+def _hyp(n: dict) -> dict:
+    return {"id": n["id"], "statement": n.get("statement"), "summary": n.get("summary"), "evidence": n.get("evidence", []),
+            "round": n.get("round")}
+
+
+def explain_summary(x: dict, path: Path | None = None) -> dict:
+    """The `--json` view of an explanation. Keys are stable; see README "explain --json"."""
+    hyps = x["hypotheses"]
+    return {
+        "format": JSON_FORMAT,
+        "run": x["run"],
+        "run_sha256": x["run_sha256"],
+        "explanation": str(path) if path else None,
+        "verdict": {"outcome": x["outcome"], "headline": x["headline"], "symptom": x["cause"]["symptom"],
+                    "root": x["cause"]["root"], "chain": x["cause"]["chain"], "failure_moment": x["failure_moment"],
+                    "claims": [{"kind": c["kind"], "text": c["text"], "cites": c["cites"], "hypothesis": c.get("hypothesis")}
+                               for c in x["claims"]]},
+        "kept": [_hyp(n) for n in hyps if n["status"] == "kept"],
+        "refuted": [_hyp(n) for n in hyps if n["status"] == "killed"],
+        "evidence": [{k: e.get(k) for k in ("id", "source", "channel", "t0", "t1", "value", "note")} for e in x["evidence"]],
+    }
+
+
 def cmd_explain(a) -> None:
     log = RunLog.load(a.run)
     controls = [RunLog.load(c) for c in a.control] if a.control else [simulate("nominal", CONTROL_SEED, render=False)]
     x = explain(log, _backend(a.backend), controls)
     out = Path(a.run) / "explain.json" if Path(a.run).is_dir() else Path(a.run).parent / "explain.json"
     out.write_text(json.dumps(x, indent=1))
+    if a.json:
+        print(json.dumps(explain_summary(x, out), indent=1))
+        return
     print(x["headline"])
     for c in x["claims"]:
         print(f"  [{c['kind']}] {c['text']}  ({', '.join(c['cites'])})")
@@ -151,6 +180,7 @@ def main(argv=None) -> None:
     s.add_argument("run")
     s.add_argument("--control", action="append")
     s.add_argument("--backend", choices=["rules", "llm"])
+    s.add_argument("--json", action="store_true", help="print verdict, kept/refuted hypotheses and evidence as one JSON object")
     s.set_defaults(fn=cmd_explain)
     s = sub.add_parser("verify")
     s.add_argument("explanation")
