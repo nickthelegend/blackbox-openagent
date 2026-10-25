@@ -1,4 +1,5 @@
 const {chromium}=require('playwright');
+const {expectedMissingResponse,expectedMissingConsole}=require('./expected-errors.cjs');
 const fs=require('fs'); const path=require('path'); const assert=require('assert/strict');
 const root=process.cwd(), out=path.join(root,'audit/browser'), base=process.argv[2], alt=process.argv[3];
 const index=JSON.parse(fs.readFileSync('web/data/index.json'));
@@ -22,9 +23,9 @@ async function test(n,fn,options={}){
  try{await fn({page,ctx,logs,check,load});}catch(e){check('Flow completed',false,e.message);}
  await page.waitForTimeout(200);
  try{await page.screenshot({path:path.join(folder,'screen.jpg'),type:'jpeg',quality:60,fullPage:false});}catch(e){check('Screenshot captured',false,e.message);}
- const consoleErrors=logs.console.filter(x=>x.type==='error');
- const badRequests=logs.network.filter(x=>x.event==='requestfailed'||(x.status>=400&&!((n===22&&x.url===alt+'/empty/data/index.json'&&x.status===404)||(n===23&&x.url===alt+'/missing/data/slip_grip-000/run.json'&&x.status===404)||(n===31&&x.url===base+'/nonexistent/file.ext'&&x.status===404))));
- check('Zero console errors',consoleErrors.length===0,consoleErrors);
+ const consoleErrors=logs.console.filter(x=>x.type==='error'&&!expectedMissingConsole(n,alt,x));
+ const badRequests=logs.network.filter(x=>x.event==='requestfailed'||(x.status>=400&&!(expectedMissingResponse(n,alt,x)||(n===31&&x.url===base+'/nonexistent/file.ext'&&x.status===404))));
+ check('Zero unexpected console errors',consoleErrors.length===0,consoleErrors);
  check('Zero uncaught page errors',logs.pageErrors.length===0,logs.pageErrors);
  check('Zero unexpected network failures or HTTP errors',badRequests.length===0,badRequests);
  let result={id,status:logs.checks.every(x=>x.pass)?'PASS':'FAIL',failures:logs.checks.filter(x=>!x.pass),evidence:`audit/browser/${id}/`};
